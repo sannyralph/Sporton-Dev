@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_global_section_602851221115503244-3": {
+      "type": "gp-global-section-602851221115503244",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggOfNoCt_Oo_text": "<br>About sporton",
+        "ggqDNlegQVG_text": "<p>Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally.&nbsp;</p>",
+        "gg79jzxBDBY_text": "Product",
+        "gganOxaMGOq_text": "About &nbsp;",
+        "ggjaMurHQIW_text": "<p>Contact&nbsp;</p>",
+        "gg8MAPdxPe4_text": "<p>Affiliates</p>",
+        "ggOI62S6cgB_text": "Delivary &amp; Returns",
+        "gg2SJB2FT9j_text": "<p>Shipping</p>",
+        "ggEhEqvYlwF_text": "<p>Returns</p>",
+        "gg9piXg5rBN_text": "Legal &nbsp;",
+        "gguj75VIlAU_text": "<p>Terms + Conditions&nbsp;</p>",
+        "ggJDJsGjCrZ_text": "<p>Privacy Policy</p>",
+        "ggqDeC2uR1k_text": "Gift someone you love&nbsp;",
+        "gg6AR3WOPAx_text": "<p>Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved.</p>"
+      }
+    },
+    "gp_global_section_602852401593975489-2": {
+      "type": "gp-global-section-602852401593975489",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggRljDi0_h0_text": "Sign up to 40% plus",
+        "ggtLVOEgKbx_text": "<p>your fitness journey starts here. sign up to &nbsp;exclusive access to your fitness events, &nbsp;latest collection, and save up to 40% off&nbsp;</p>",
+        "ggJ3t8TOOQb_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "ggJ3t8TOOQb_errorMessage": "Can’t send email. Please try again later.",
+        "ggUbT2iVqRm_placeholder": "Enter your email"
+      }
+    },
+    "gp_global_section_602852479155045298-1": {
+      "type": "gp-global-section-602852479155045298",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gg48Z5psBRB_text": "FAQs",
+        "gg1SJCz10Ou_childItem_0": "<p>What makes Sporton activewear different from other brands?</p>",
+        "gg1SJCz10Ou_childItem_1": "<p>How can I find the right size for me?</p>",
+        "ggnMu1C_QXS_text": "<p>At Sporton, we spent over two years researching, testing, and perfecting our fabrics to deliver unmatched comfort, performance, and durability. Our products are designed to support you at every stage of your fitness journey—no matter your goal, body type, or activity level.</p>",
+        "ggcFCEbWrDt_text": "<p>Every Sporton product page includes a detailed size chart and helpful fit notes. We also show the height and size of our models, so you can get a clearer visual idea of how each item fits on different body types. If you’re between sizes, we suggest sizing up for a roomier fit, or you can always reach out to our customer support for personalized sizing advice.</p>",
+        "gg8u6UFRdg8_childItem_0": "<p>Where do you ship, and how long does delivery take?</p>",
+        "gg8u6UFRdg8_childItem_1": "<p>What is your return and exchange policy?</p>",
+        "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul><li><strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li><li><strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li><li><strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li></ul>",
+        "ggzHGApmpcf_text": "<p>We accept returns and exchanges within 30 days of delivery as long as items are unworn and with original tags attached. To initiate a return or exchange, simply visit our [Returns Portal] or contact us at <a href=\"mailto:support@sporton.com\" target=\"_blank\">support@sporton.</a>store</p>",
+        "gguWVpth1AF_childItem_0": "<p>Is Sporton quality really that special?</p>",
+        "gguWVpth1AF_childItem_1": "<p>Are your fabrics and materials sustainable?</p>",
+        "ggSCho9ygMj_text": "<p>Absolutely! We spent over two years sourcing and pressure-testing dozens of fabric blends and trims. We’re so confident in our quality that we offer a satisfaction guarantee: if you’re not impressed, let us know and we’ll make it right.</p>",
+        "gg9aiWnsHl8_text": "<p>Sustainability is a priority at Sporton. Our collection features eco-friendly fabrics selected for performance and minimal impact, and we continuously seek ways to increase our use of recycled and responsible materials.</p>",
+        "ggEfdcB0Zi-_childItem_0": "<p>How can I join the affiliate program and sporton community?</p>",
+        "ggEfdcB0Zi-_childItem_1": "<p>When is the next fitness event?</p>",
+        "gg5QNAHFh7P_text": "<p>Joining our affiliate program is easy—and we’d love to have you! Simply visit our [Affiliate Program page] and fill out the quick application form. Once accepted, you’ll get your unique referral link, early access to launches, and special perks for sharing Sporton with your audience.</p>",
+        "ggEnbKPONwB_text": "<p>Stay in the loop by signing up for our newsletter! You’ll be the first to get invited to our upcoming fitness events, as well as enjoy first looks at new collections and exclusive sneak peeks, just for members of our community. Don’t miss out—subscribe today!</p>"
+      }
+    },
+    "gp_section_602235078512214724": {
+      "type": "gp-section-602235078512214724",
+      "settings": {
+        "section_preload": "true",
+        "checksum": "70cdcff4498126cdc350283df956d6d1b755c8633bc3449094cd6bea12b81200_1_1_1_0__1",
+        "ggh_FFdn_rr_text": "<p>STAY FIT &amp; EARN extra income</p>",
+        "ggQ9FCCbNi8_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:14px;\">At Sporton, you can reach your fitness goals, earn extra income, and inspire those around you.</span></p>"
+      }
+    },
+    "gp_section_602235600384295620": {
+      "type": "gp-section-602235600384295620",
+      "settings": {
+        "checksum": "fcaac8193721479db83b7928571de43266ab7f8376ec7bcf89e358f4767fd926_1_1_1_0__1",
+        "ggvDHkTh0wL_text": "Join sporton",
+        "gge3QGc8lTV_label": "<p>SIGN UP</p>",
+        "gg-D7Dw4xOu_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:16.4111px;\"><strong>Apply</strong></span></p>",
+        "ggtZT7Wk5fy_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:medium;\">Fill out your application and expect an email response within 48 hours.</span></p>",
+        "ggkkcbKK0al_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:16.4111px;\"><strong>Get Your Gear</strong></span></p>",
+        "ggeotYsYCn3_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:medium;\">Once you're approved, you'll receive an exclusive discount</span></p>",
+        "ggWhtmkwXv2_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:16.4111px;\"><strong>Show Off</strong></span></p>",
+        "gggKwGuP4-0_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:medium;\">Make Sporton part of your routine and inspire others on social media while you earn.</span></p>"
+      }
+    }
+  },
+  "order": [
+    "gp_section_602235078512214724",
+    "gp_section_602235600384295620",
+    "gp_global_section_602852479155045298-1",
+    "gp_global_section_602852401593975489-2",
+    "gp_global_section_602851221115503244-3"
+  ]
+}

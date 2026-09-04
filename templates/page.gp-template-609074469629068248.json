@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_609074469696177112": {
+      "settings": {
+        "checksum": "c334e622ee4f6127a09f3450d17065687fe52d2d0d98238ae057b275744296dc_1_1_1_0__1"
+      },
+      "type": "gp-section-609074469696177112"
+    },
+    "gp_section_609074469696242648": {
+      "settings": {
+        "checksum": "1ff3c328b2e0b0a255ab3bab2fb17489768c8df014cc0c023aad96825e3f40f1_1_1_1_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-609074469696242648"
+    },
+    "gp_section_609074469696308184": {
+      "settings": {
+        "checksum": "ddf73f2043c05705b3e2b79153a37ad299c16f4ea054cc180311b8b469ebffcf_1_1_1_0__1"
+      },
+      "type": "gp-section-609074469696308184"
+    },
+    "gp_section_609074469696373720": {
+      "settings": {
+        "checksum": "d615ca445390d59038a07dc042a4a74e764600c626904e187b7c570aaa0f75f7_1_1_1_0__1",
+        "gg29nd-bfTZ_text": "<p>Coffee's mission is to offer love and hope to those in need through funds from a great cup of coffee. We want to inspire and educate our coffee lovers in ways that enhance their experience with us and encourage them to be an outlet of hope for others.&nbsp;<br><br>We want to create a coffee culture that is built around quality, sociability, and affordability so that everyone can enjoy our product and share in our outreach. Our goal is to continue to grow our business in ways that will allow us to give more, this will include things like scholarships for local graduating seniors, food programs, and much more! We have BIG plans for coffee and appreciate you joining us on this journey!</p>",
+        "ggN01zpKmAz_text": "We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.&nbsp;<br>To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.&nbsp;<br>To start a return, you can contact us at <a href=\"mailto:support@sporton.store\">support@sporton.store</a>.&nbsp;<br><br>If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted.&nbsp;<br><br>You can always contact us for any return questions at <a href=\"mailto:support@sporton.store\">support@sporton.store</a>.&nbsp;<br>&nbsp;<br><strong>Damages and issues</strong>&nbsp;<br>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.<br>&nbsp;<br><strong>Exceptions / non-returnable items</strong>&nbsp;<br>Certain types of items cannot be returned, like perishable goods (such as food, flowers, or plants), custom products (such as special orders or personalized items), and personal care goods (such as beauty products). We also do not accept returns for hazardous materials, flammable liquids, or gases. Please get in touch if you have questions or concerns about your specific item.&nbsp;<br><br>Unfortunately, we cannot accept returns on sale items or gift cards.<br>&nbsp;<br><strong>Exchanges</strong>&nbsp;<br>The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.<br>&nbsp;<br><strong>European Union 14 day cooling off period</strong>&nbsp;<br>Notwithstanding the above, if the merchandise is being shipped into the European Union, you have the right to cancel or return your order within 14 days, for any reason and without a justification. As above, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.<br>&nbsp;<br><strong>Refunds</strong>&nbsp;<br>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.&nbsp;<br>If more than 15 business days have passed since we’ve approved your return, please contact us at support@sporton.store.",
+        "ggppQ934ZMH_text": "<p>Our Mission &amp; Vision</p>"
+      },
+      "type": "gp-section-609074469696373720"
+    },
+    "gp_section_609074469696439256": {
+      "settings": {
+        "checksum": "9804a2ccb087f3a44f8f37720d8ff38c5065f09cbf9ac6c52f9d7527a80e7e41_1_1_1_0__1"
+      },
+      "type": "gp-section-609074469696439256"
+    },
+    "gp_section_609074469696504792": {
+      "settings": {
+        "checksum": "36f20c8eb9fca287ce564be3eac9690046fb6e1ca89e26fcb38268cd53e053c5_1_1_1_0__1",
+        "gg-r9OwYZcS_text": "<strong>Return and refund policy</strong>"
+      },
+      "type": "gp-section-609074469696504792"
+    }
+  },
+  "order": [
+    "gp_section_609074469696242648",
+    "gp_section_609074469696177112",
+    "gp_section_609074469696504792",
+    "gp_section_609074469696373720",
+    "gp_section_609074469696308184",
+    "gp_section_609074469696439256"
+  ]
+}

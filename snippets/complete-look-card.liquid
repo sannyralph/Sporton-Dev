@@ -1,0 +1,146 @@
+{% assign first_variant = product.selected_or_first_available_variant %}
+{% assign card_image = product.featured_media.preview_image | default: product.featured_image %}
+{% assign form_id = 'complete-look-form-' | append: product.id %}
+
+<article
+  class="complete-look-card"
+  data-complete-look-card
+  data-product-id="{{ product.id }}"
+>
+  <div class="complete-look-card__media">
+    <a href="{{ first_variant.url }}" data-complete-look-link>
+      {% if card_image %}
+        {{
+          card_image
+          | image_url: width: 700
+          | image_tag:
+            loading: 'lazy',
+            widths: '240, 480, 700',
+            sizes: '(min-width: 750px) 220px, 42vw',
+            alt: product.title
+        }}
+      {% endif %}
+    </a>
+  </div>
+
+  <div class="complete-look-card__body">
+    <a href="{{ first_variant.url }}" class="complete-look-card__title" data-complete-look-link>
+      {{ product.title }}
+    </a>
+
+    <div class="complete-look-card__price">
+      {{ product.price | money }}
+    </div>
+
+    {% form 'product', product, id: form_id, class: 'complete-look-card__form', data-complete-look-form: '' %}
+      <input
+        type="hidden"
+        name="id"
+        value="{{ first_variant.id }}"
+        data-complete-look-variant
+      >
+
+      <input
+        type="hidden"
+        name="quantity"
+        value="1"
+      >
+
+      {% if product.options_with_values.size > 0 %}
+
+        {% comment %}
+          Show Size first, matching the reference layout.
+        {% endcomment %}
+        {% for option in product.options_with_values %}
+          {% assign option_name_downcase = option.name | downcase %}
+          {% if option_name_downcase contains 'size' %}
+            {% case option.position %}
+              {% when 1 %}
+                {% assign selected_value = first_variant.option1 %}
+              {% when 2 %}
+                {% assign selected_value = first_variant.option2 %}
+              {% when 3 %}
+                {% assign selected_value = first_variant.option3 %}
+            {% endcase %}
+
+            <label
+              class="visually-hidden"
+              for="{{ form_id }}-option-{{ option.position }}"
+            >
+              {{ option.name }}
+            </label>
+
+            <select
+              id="{{ form_id }}-option-{{ option.position }}"
+              name="options[{{ option.name }}]"
+              data-option-position="{{ option.position }}"
+              aria-label="{{ option.name }}"
+            >
+              {% for value in option.values %}
+                <option
+                  value="{{ value | escape }}"
+                  {% if value == selected_value %}selected{% endif %}
+                >
+                  {{ value }}
+                </option>
+              {% endfor %}
+            </select>
+          {% endif %}
+        {% endfor %}
+
+        {% comment %}
+          Show Color and any remaining options after Size.
+        {% endcomment %}
+        {% for option in product.options_with_values %}
+          {% assign option_name_downcase = option.name | downcase %}
+          {% unless option_name_downcase contains 'size' %}
+            {% case option.position %}
+              {% when 1 %}
+                {% assign selected_value = first_variant.option1 %}
+              {% when 2 %}
+                {% assign selected_value = first_variant.option2 %}
+              {% when 3 %}
+                {% assign selected_value = first_variant.option3 %}
+            {% endcase %}
+
+            <label
+              class="visually-hidden"
+              for="{{ form_id }}-option-{{ option.position }}"
+            >
+              {{ option.name }}
+            </label>
+
+            <select
+              id="{{ form_id }}-option-{{ option.position }}"
+              name="options[{{ option.name }}]"
+              data-option-position="{{ option.position }}"
+              aria-label="{{ option.name }}"
+            >
+              {% for value in option.values %}
+                <option
+                  value="{{ value | escape }}"
+                  {% if value == selected_value %}selected{% endif %}
+                >
+                  {{ value }}
+                </option>
+              {% endfor %}
+            </select>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+
+     <button
+        type="submit"
+        class="complete-look-card__button"
+        data-complete-look-submit
+        style="border-radius: 100px !important;"
+      >
+        Quick selection
+      </button>
+    {% endform %}
+
+    <script type="application/json" data-complete-look-variants>
+      {{ product.variants | json }}
+    </script>
+  </div>
+</article>
