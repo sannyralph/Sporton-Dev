@@ -318,6 +318,7 @@
     },
     "gp_shopify_original_section_600648752440541771": {
       "type": "gp-section-600648752440541771",
+      "disabled": true,
       "settings": {
         "section_preload": "false",
         "checksum": "",
