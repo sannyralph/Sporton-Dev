@@ -739,103 +739,86 @@
     margin-bottom: 22px !important;
   }
 }
+
 /* ==================================================
-   Sporton: tighten product information spacing
+   SPORTON FINAL: Eliminate title-to-variant gap
    ================================================== */
 
 @media screen and (min-width: 750px) {
-  /* Stop the details panel from spreading content vertically */
-  .product-information__grid > .product-details,
-  .product-information__grid > product-details,
-  .product-information__grid .product-details,
-  .product-information__grid product-details {
-    height: fit-content !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    align-self: start !important;
-    align-content: flex-start !important;
-    justify-content: flex-start !important;
-    row-gap: 0 !important;
-    gap: 0 !important;
-    --gap: 0px !important;
+  /* Force product title spacing */
+  .product-information__grid .product-details h1,
+  .product-information__grid .product-details h2,
+  .product-information__grid product-details h1,
+  .product-information__grid product-details h2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 
-  /* Remove inherited block spacing */
-  .product-information__grid
-    :is(.product-details, product-details)
-    > * {
-    min-height: 0 !important;
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-    padding-block-start: 0 !important;
-    padding-block-end: 0 !important;
+  /* Force wrapper around title to have no gap */
+  .product-information__grid .product-details > *:has(h1),
+  .product-information__grid .product-details > *:has(h2),
+  .product-information__grid product-details > *:has(h1),
+  .product-information__grid product-details > *:has(h2) {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 
-  /* Add controlled spacing between the main sections */
-  .product-information__grid
-    :is(.product-details, product-details)
-    > * + * {
-    margin-block-start: 24px !important;
+  /* Force variant picker to stick close */
+  .product-information__grid .product-details variant-picker,
+  .product-information__grid .product-details .variant-picker,
+  .product-information__grid product-details variant-picker,
+  .product-information__grid product-details .variant-picker {
+    margin-top: 12px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
   }
 
-  /* Keep the title close to the color selector */
-  .product-information__grid
-    :is(.product-details, product-details)
-    > *:has(h1, h2) {
-    margin-block-end: 4px !important;
+  /* Wrapper around variant picker */
+  .product-information__grid .product-details > *:has(variant-picker),
+  .product-information__grid .product-details > *:has(.variant-picker),
+  .product-information__grid product-details > *:has(variant-picker),
+  .product-information__grid product-details > *:has(.variant-picker) {
+    margin-top: 12px !important;
+    padding-top: 0 !important;
   }
 
-  /* Keep Color and Size close together */
-  .product-information__grid
-    :is(.product-details, product-details)
-    :is(variant-picker, .variant-picker) {
-    margin-block-start: 0 !important;
+  /* Individual variant options (Color, Size) */
+  .product-information__grid .product-details .variant-picker__option,
+  .product-information__grid product-details .variant-picker__option {
+    margin-bottom: 14px !important;
+    padding-bottom: 0 !important;
   }
 
-  .product-information__grid
-    :is(.product-details, product-details)
-    .variant-picker__option {
-    margin-block-end: 18px !important;
+  /* Price block */
+  .product-information__grid .product-details .price,
+  .product-information__grid product-details .price {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    padding-top: 0 !important;
   }
 
-  /* Keep the price close to the size selector */
-  .product-information__grid
-    :is(.product-details, product-details)
-    .price {
-    margin-block-start: 2px !important;
-    margin-block-end: 20px !important;
-  }
-
-  /* Keep the add-to-cart button close to the price */
-  .product-information__grid
-    :is(.product-details, product-details)
-    :is(buy-buttons, .buy-buttons) {
-    margin-block-start: 0 !important;
-    padding-block-start: 0 !important;
-  }
-
-  /* Keep Features close to the purchase area */
-  .product-information__grid
-    :is(.product-details, product-details)
-    .rte {
-    margin-block-start: 28px !important;
+  /* Wrapper around price */
+  .product-information__grid .product-details > *:has(.price),
+  .product-information__grid product-details > *:has(.price) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
-/* Mobile spacing */
 @media screen and (max-width: 749px) {
-  .product-information__grid
-    :is(.product-details, product-details) {
-    height: fit-content !important;
-    min-height: 0 !important;
-    justify-content: flex-start !important;
-    gap: 0 !important;
+  .product-information__grid .product-details h1,
+  .product-information__grid .product-details h2,
+  .product-information__grid product-details h1,
+  .product-information__grid product-details h2 {
+    margin-bottom: 12px !important;
   }
 
-  .product-information__grid
-    :is(.product-details, product-details)
-    > * + * {
-    margin-block-start: 20px !important;
+  .product-information__grid .product-details variant-picker,
+  .product-information__grid .product-details .variant-picker,
+  .product-information__grid product-details variant-picker,
+  .product-information__grid product-details .variant-picker {
+    margin-top: 0 !important;
   }
 }
 {% endstylesheet %}
