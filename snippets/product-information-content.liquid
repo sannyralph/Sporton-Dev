@@ -821,4 +821,188 @@
     margin-top: 0 !important;
   }
 }
+/* ==================================================
+   SPORTON FINAL: Smaller color and size selectors
+   ================================================== */
+
+@media screen and (min-width: 750px) {
+  /* Make all variant controls compact */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(label, button) {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 0 !important;
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+  }
+
+  /* Keep color swatches circular and smaller */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(.swatch, .color-swatch, [class*='swatch']) {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+  }
+
+  /* Reduce the spacing between selector buttons */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values {
+    gap: 5px !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(label, button) {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    font-size: 0.85rem !important;
+  }
+
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(.swatch, .color-swatch, [class*='swatch']) {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+  }
+
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values {
+    gap: 4px !important;
+  }
+}
+/* ==================================================
+   SPORTON FINAL: Compact selectors and rounded cart button
+   ================================================== */
+
+@media screen and (min-width: 750px) {
+  /* Smaller size options */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(label, button, input[type='radio'] + label) {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    font-size: 0.8rem !important;
+    line-height: 1 !important;
+  }
+
+  /* Smaller color swatch */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(.swatch-input__label, .swatch, .color-swatch, [class*='swatch']) {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+  }
+
+  /* Compact spacing between options */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values {
+    gap: 4px !important;
+  }
+
+  /* Rounded add-to-cart button */
+  .product-information__grid
+    :is(.product-details, product-details)
+    :is(buy-buttons, .buy-buttons)
+    button[type='submit'],
+  .product-information__grid
+    :is(.product-details, product-details)
+    button[name='add'] {
+    border-radius: 8px !important;
+  }
+
+  /* Remove cart-plus icon from add-to-cart button */
+  .product-information__grid
+    :is(.product-details, product-details)
+    :is(buy-buttons, .buy-buttons)
+    button[type='submit']
+    :is(.svg-wrapper, .add-to-cart-icon, svg),
+  .product-information__grid
+    :is(.product-details, product-details)
+    button[name='add']
+    :is(.svg-wrapper, .add-to-cart-icon, svg) {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  /* Smaller mobile size options */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(label, button, input[type='radio'] + label) {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    padding: 0 !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Smaller mobile color swatch */
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values
+    :is(.swatch-input__label, .swatch, .color-swatch, [class*='swatch']) {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    min-height: 28px !important;
+  }
+
+  .product-information__grid
+    :is(.product-details, product-details)
+    .variant-picker__option-values {
+    gap: 3px !important;
+  }
+
+  /* Rounded mobile add-to-cart button */
+  .product-information__grid
+    :is(.product-details, product-details)
+    :is(buy-buttons, .buy-buttons)
+    button[type='submit'],
+  .product-information__grid
+    :is(.product-details, product-details)
+    button[name='add'] {
+    border-radius: 8px !important;
+  }
+
+  /* Remove mobile cart-plus icon */
+  .product-information__grid
+    :is(.product-details, product-details)
+    :is(buy-buttons, .buy-buttons)
+    button[type='submit']
+    :is(.svg-wrapper, .add-to-cart-icon, svg),
+  .product-information__grid
+    :is(.product-details, product-details)
+    button[name='add']
+    :is(.svg-wrapper, .add-to-cart-icon, svg) {
+    display: none !important;
+  }
+}
 {% endstylesheet %}
