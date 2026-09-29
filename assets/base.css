@@ -2,7 +2,35 @@
   box-sizing: border-box;
 }
 
+/* Sporton: Complete the Look — compact form controls */
+.complete-look-card__form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
 
+.complete-look-card__form select {
+  padding: 6px 12px !important;
+  height: 32px !important;
+  min-height: 0 !important;
+  line-height: 1.2 !important;
+  font-size: 0.85rem !important;
+}
+
+.complete-look-card__button {
+  padding: 8px 16px !important;
+  height: 34px !important;
+  min-height: 0 !important;
+  font-size: 0.8rem !important;
+  line-height: 1 !important;
+}
+
+/* Sporton: rounded Add to Cart button */
+.buy-buttons-block button[type='submit'],
+.buy-buttons-block button[name='add'],
+.buy-buttons-block .add-to-cart-button {
+  border-radius: 8px !important;
+}
 
  /* ==================================================
    Sporton: make the image gallery wider

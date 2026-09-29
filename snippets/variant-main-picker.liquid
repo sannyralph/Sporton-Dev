@@ -99,23 +99,27 @@
                     data-current-checked="false"
                   {% endif %}
                 >
-                {% if variant_style == 'swatch' %}
-                  {% liquid
-                    assign featured_media = product_option_value.variant.featured_media
+               {% if variant_style == 'swatch' %}
+                {% liquid
+                  assign featured_media = product_option_value.variant.featured_media
 
-                    # If the variant has no featured media, and we have a combined listing product, then fall back to
-                    # using the featured media of the child product that is linked to this option value.
-                    if featured_media == blank and product_option_value.product_url
-                      assign featured_media = product_option_value.variant.product.featured_media
-                    endif
-                  %}
+                  if featured_media == blank and product_option_value.product_url
+                    assign featured_media = product_option_value.variant.product.featured_media
+                  endif
+                %}
 
+                <span class="sporton-color-card__image">
                   {% render 'swatch',
                     swatch: product_option_value.swatch,
                     variant_image: featured_media,
                     mode: 'unscaled'
                   %}
-                {% else %}
+                </span>
+
+                <span class="sporton-color-card__name">
+                  {{ product_option_value | escape }}
+                </span>
+              {% else %}
                   {% if product_option_value.available == true %}
                     <span
                       class="variant-option__button-label__pill"
@@ -689,4 +693,126 @@
     text-align: right;
     justify-content: right;
   }
+  /* Sporton colour selectors: rectangular image cards */
+.variant-option--swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+
+.variant-option--swatches legend {
+  flex-basis: 100%;
+  width: 100%;
+  margin-bottom: 8px !important;
+}
+
+.variant-option--swatches
+  .variant-option__button-label--has-swatch {
+  display: flex !important;
+  flex: 0 0 66px !important;
+  width: 66px !important;
+  min-width: 66px !important;
+  height: 100px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: #666 !important;
+}
+
+
+/* Rectangular product image */
+.variant-option--swatches
+  .variant-option__button-label--has-swatch
+  .sporton-color-card__image {
+  display: block;
+  width: 100%;
+  height: 89px;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+}
+
+.variant-option--swatches
+  .variant-option__button-label--has-swatch
+  .sporton-color-card__image .swatch {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  border-radius: 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Colour name below image */
+.variant-option--swatches
+  .variant-option__button-label--has-swatch
+  .sporton-color-card__name {
+  display: block;
+  width: 100%;
+  min-height: 21px;
+  padding: 3px 5px;
+  overflow: hidden;
+  color: #666;
+  font-size: 0.72rem;
+  line-height: 1.1;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Selected colour */
+.variant-option--swatches
+  .variant-option__button-label--has-swatch:has(:checked)
+  .sporton-color-card__name {
+  background: #000;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Remove the old circular selected-swatch outline */
+.variant-option--swatches
+  .variant-option__button-label--has-swatch:has(:checked) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Keep the hidden radio input functional */
+.variant-option--swatches
+  .variant-option__button-label--has-swatch
+  input {
+  z-index: 3;
+}
+
+/* Mobile cards */
+@media screen and (max-width: 749px) {
+  .variant-option--swatches
+    .variant-option__button-label--has-swatch {
+    flex-basis: 48px !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    height: 77px !important;
+  }
+
+  .variant-option--swatches
+    .variant-option__button-label--has-swatch
+    .sporton-color-card__image {
+    height: 61px;
+  }
+
+  .variant-option--swatches
+    .variant-option__button-label--has-swatch
+    .sporton-color-card__name {
+    min-height: 16px;
+    padding: 2px 4px;
+    font-size: 0.62rem;
+  }
+}
 {% endstylesheet %}

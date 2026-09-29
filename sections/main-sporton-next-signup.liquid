@@ -1,0 +1,380 @@
+{% liquid
+  assign form_id = 'SportonNextSignup-' | append: section.id
+%}
+
+<section class="sporton-next-signup color-{{ section.settings.color_scheme }}" data-section-id="{{ section.id }}">
+  <div class="sporton-next-signup__shell">
+    <div class="sporton-next-signup__intro">
+      <p class="sporton-next-signup__eyebrow">SPORTON NEXT</p>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="sporton-next-signup__lead">{{ section.settings.intro }}</p>
+
+      <ul class="sporton-next-signup__benefits" role="list">
+        <li><span aria-hidden="true">✓</span> Exclusive fitness and community events</li>
+        <li><span aria-hidden="true">✓</span> Early access to launches and limited drops</li>
+        <li><span aria-hidden="true">✓</span> Member-only discounts and surprise rewards</li>
+        <li><span aria-hidden="true">✓</span> Training content, challenges, and more</li>
+      </ul>
+    </div>
+
+    <div class="sporton-next-signup__card">
+      <div class="sporton-next-signup__card-heading">
+        <p class="sporton-next-signup__card-kicker">START HERE</p>
+        <h2>{{ section.settings.form_heading }}</h2>
+        <p>{{ section.settings.form_intro }}</p>
+      </div>
+
+      {% form 'create_customer', id: form_id, class: 'sporton-next-signup__form' %}
+        {% if form.errors %}
+          <div class="sporton-next-signup__errors" role="alert">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+
+        <div class="sporton-next-signup__field-grid">
+          <div class="sporton-next-signup__field">
+            <label for="{{ form_id }}-FirstName">First name <span aria-hidden="true">*</span></label>
+            <input
+              id="{{ form_id }}-FirstName"
+              type="text"
+              name="customer[first_name]"
+              value="{{ form.first_name }}"
+              autocomplete="given-name"
+              required
+            >
+          </div>
+
+          <div class="sporton-next-signup__field">
+            <label for="{{ form_id }}-LastName">Last name <span aria-hidden="true">*</span></label>
+            <input
+              id="{{ form_id }}-LastName"
+              type="text"
+              name="customer[last_name]"
+              value="{{ form.last_name }}"
+              autocomplete="family-name"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="sporton-next-signup__field">
+          <label for="{{ form_id }}-Email">Email address <span aria-hidden="true">*</span></label>
+          <input
+            id="{{ form_id }}-Email"
+            type="email"
+            name="customer[email]"
+            value="{{ form.email }}"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="sporton-next-signup__field">
+          <label for="{{ form_id }}-Password">Password <span aria-hidden="true">*</span></label>
+          <input
+            id="{{ form_id }}-Password"
+            type="password"
+            name="customer[password]"
+            autocomplete="new-password"
+            minlength="5"
+            required
+          >
+          <small>Use at least 5 characters.</small>
+        </div>
+
+        <label class="sporton-next-signup__consent" for="{{ form_id }}-Marketing">
+          <input type="hidden" name="customer[accepts_marketing]" value="false">
+          <input id="{{ form_id }}-Marketing" type="checkbox" name="customer[accepts_marketing]" value="true">
+          <span>Send me Sporton event invitations, launch news, and exclusive offers.</span>
+        </label>
+
+        <button class="sporton-next-signup__submit" type="submit">{{ section.settings.button_label }}</button>
+
+        <p class="sporton-next-signup__login">
+          Already have a Sporton account?
+          <a href="{{ routes.account_login_url }}">Log in</a>
+        </p>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+  .sporton-next-signup {
+    --next-ink: #111111;
+    --next-muted: #656565;
+    --next-line: #d8d8d8;
+    --next-soft: #f4f4f1;
+    background: var(--color-background, #ffffff);
+    color: var(--next-ink);
+    padding: clamp(56px, 8vw, 120px) 24px;
+  }
+
+  .sporton-next-signup__shell {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+    gap: clamp(48px, 9vw, 140px);
+    align-items: start;
+  }
+
+  .sporton-next-signup__intro {
+    position: sticky;
+    top: 40px;
+  }
+
+  .sporton-next-signup__eyebrow,
+  .sporton-next-signup__card-kicker {
+    margin: 0 0 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+  }
+
+  .sporton-next-signup h1,
+  .sporton-next-signup h2 {
+    margin: 0;
+    font-family: var(--font-heading--family, var(--font-body--family));
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 0.94;
+    text-transform: uppercase;
+  }
+
+  .sporton-next-signup h1 {
+    max-width: 640px;
+    font-size: clamp(3rem, 6vw, 6.5rem);
+  }
+
+  .sporton-next-signup__lead {
+    max-width: 470px;
+    margin: 30px 0 0;
+    color: var(--next-muted);
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    line-height: 1.45;
+  }
+
+  .sporton-next-signup__benefits {
+    display: grid;
+    gap: 14px;
+    max-width: 520px;
+    margin: 42px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .sporton-next-signup__benefits li {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .sporton-next-signup__benefits span {
+    font-weight: 700;
+  }
+
+  .sporton-next-signup__card {
+    background: var(--next-soft);
+    padding: clamp(28px, 5vw, 64px);
+  }
+
+  .sporton-next-signup__card-heading {
+    margin-bottom: 34px;
+  }
+
+  .sporton-next-signup__card-heading h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
+  .sporton-next-signup__card-heading p:last-child {
+    max-width: 480px;
+    margin: 18px 0 0;
+    color: var(--next-muted);
+    line-height: 1.45;
+  }
+
+  .sporton-next-signup__form {
+    display: grid;
+    gap: 20px;
+  }
+
+  .sporton-next-signup__field-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .sporton-next-signup__field {
+    display: grid;
+    gap: 8px;
+  }
+
+  .sporton-next-signup__field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .sporton-next-signup__field input {
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 16px;
+    border: 1px solid var(--next-line);
+    border-radius: 0;
+    background: #fff;
+    color: var(--next-ink);
+    font: inherit;
+  }
+
+  .sporton-next-signup__field input:focus {
+    outline: 2px solid var(--next-ink);
+    outline-offset: 2px;
+  }
+
+  .sporton-next-signup__field small {
+    color: var(--next-muted);
+    font-size: 0.78rem;
+  }
+
+  .sporton-next-signup__consent {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    color: var(--next-muted);
+    font-size: 0.86rem;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+
+  .sporton-next-signup__consent input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    margin: 1px 0 0;
+    accent-color: var(--next-ink);
+  }
+
+  .sporton-next-signup__submit {
+    width: 100%;
+    min-height: 56px;
+    border: 1px solid var(--next-ink);
+    border-radius: 999px;
+    background: var(--next-ink);
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+
+  .sporton-next-signup__submit:hover {
+    background: transparent;
+    color: var(--next-ink);
+  }
+
+  .sporton-next-signup__login {
+    margin: 0;
+    color: var(--next-muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .sporton-next-signup__login a {
+    color: var(--next-ink);
+    font-weight: 700;
+  }
+
+  .sporton-next-signup__errors {
+    padding: 14px 16px;
+    border: 1px solid #b42318;
+    background: #fff1f0;
+    color: #8a1c13;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    .sporton-next-signup__shell {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .sporton-next-signup__intro {
+      position: static;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .sporton-next-signup {
+      padding-inline: 16px;
+    }
+
+    .sporton-next-signup__field-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sporton-next-signup__card {
+      padding: 24px 18px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sporton-next-signup__submit {
+      transition: none;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Sporton Next sign-up",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your next starts here."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro",
+      "default": "Join a moving community with first access to events, launches, rewards, and the people who keep Sporton moving."
+    },
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "Form heading",
+      "default": "Join Sporton Next"
+    },
+    {
+      "type": "textarea",
+      "id": "form_intro",
+      "label": "Form intro",
+      "default": "Create your account and we’ll keep you close to what’s next."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Create my account"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sporton Next sign-up"
+    }
+  ]
+}
+{% endschema %}
