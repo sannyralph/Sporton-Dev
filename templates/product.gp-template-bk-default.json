@@ -8,26 +8,43 @@
  * ------------------------------------------------------------
  */
 {
+  "order": [
+    "main",
+    "product_recommendations_qggXJq",
+    "gp_shopify_original_section_600490589531669141",
+    "gp_shopify_original_section_605722789759943428",
+    "custom_product_slider_HxhAXw",
+    "gp_shopify_original_section_600910001325736805",
+    "gp_shopify_original_section_605137170314822625",
+    "gp_shopify_original_global_section_602852479155045298-1",
+    "gp_shopify_original_section_612968786202461027",
+    "gp_shopify_original_global_section_602851221115503244-2"
+  ],
   "sections": {
+    "custom_product_slider_HxhAXw": {
+      "type": "custom-product-slider",
+      "name": "Product Slider",
+      "settings": {
+        "heading": "New Arrivals",
+        "subheading": "Discover the latest styles",
+        "view_all_text": "View All",
+        "collection": "mind-body",
+        "products_to_show": 4
+      }
+    },
     "gp_shopify_original_global_section_602851221115503244-2": {
       "type": "gp-global-section-602851221115503244",
       "settings": {
         "section_preload": "false",
         "checksum": "",
         "ggOfNoCt_Oo_text": "<br>About sporton",
-        "ggqDNlegQVG_text": "Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally.&nbsp;",
+        "ggqDNlegQVG_text": "Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally. ",
         "gg79jzxBDBY_text": "Product",
-        "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a>&nbsp;",
-        "gganOxaMGOq_text": "About &nbsp;",
-        "ggjaMurHQIW_text": "<a href=\"https://sporton.store/pages/contact\"><u>Contact&nbsp;</u></a>",
-        "gg8MAPdxPe4_text": "<a href=\"https://sporton.store/pages/Affiliates\"><u>Affiliates</u></a>",
+        "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a> ",
+        "gganOxaMGOq_text": "About  ",
         "ggOI62S6cgB_text": "Delivary &amp; Returns",
-        "gg2SJB2FT9j_text": "<a href=\"$locationOrigin/pages/shipping-policy\"><u>Shipping</u></a>",
-        "ggEhEqvYlwF_text": "<a href=\"$locationOriginpages/return-and-refund-policy\"><u>Returns</u></a>",
-        "gg9piXg5rBN_text": "Legal &nbsp;",
-        "gguj75VIlAU_text": "<a href=\"$locationOrigin/pages/terms-of-service\"><u>Terms + Conditions&nbsp;</u></a>",
-        "ggJDJsGjCrZ_text": "<a href=\"$locationOrigin/pages/privacy-policy\"><u>Privacy Policy</u></a>",
-        "ggqDeC2uR1k_text": "Gift someone you love&nbsp;",
+        "gg9piXg5rBN_text": "Legal  ",
+        "ggqDeC2uR1k_text": "Gift someone you love ",
         "gg6AR3WOPAx_text": "Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved."
       }
     },
@@ -43,7 +60,7 @@
         "ggcFCEbWrDt_text": "Every Sporton product page includes a detailed size chart and helpful fit notes. We also show the height and size of our models, so you can get a clearer visual idea of how each item fits on different body types. If you’re between sizes, we suggest sizing up for a roomier fit, or you can always reach out to our customer support for personalized sizing advice.",
         "gg8u6UFRdg8_childItem_0": "Where do you ship, and how long does delivery take?",
         "gg8u6UFRdg8_childItem_1": "What is your return and exchange policy?",
-        "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul><li><strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li><li><strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li><li><strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li></ul>",
+        "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul>\n<li>\n<strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li>\n<li>\n<strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li>\n<li>\n<strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li>\n</ul>",
         "ggzHGApmpcf_text": "We accept returns and exchanges within 30 days of delivery as long as items are unworn and with original tags attached. To initiate a return or exchange, simply visit our [Returns Portal] or contact us at <a href=\"mailto:support@sporton.com\" target=\"_blank\">support@sporton.</a>store",
         "gguWVpth1AF_childItem_0": "Is Sporton quality really that special?",
         "gguWVpth1AF_childItem_1": "Are your fabrics and materials sustainable?",
@@ -57,6 +74,7 @@
     },
     "gp_shopify_original_section_600490589531669141": {
       "type": "gp-section-600490589531669141",
+      "disabled": true,
       "settings": {
         "section_preload": "true",
         "checksum": "",
@@ -66,39 +84,45 @@
         "ggAfnYwfaXY_successMessage": "Add product to cart successfully",
         "ggAfnYwfaXY_errorMessage": "Cannot add product to cart",
         "ggamdJ8aGoz_childItem_0": "<p>Product Features</p>",
-        "ggamdJ8aGoz_childItem_1": "<p>Find &nbsp;Your Size</p>",
-        "ggamdJ8aGoz_childItem_2": "<p>Delivary &amp; Returns&nbsp;</p>",
+        "ggamdJ8aGoz_childItem_1": "<p>Find  Your Size</p>",
+        "ggamdJ8aGoz_childItem_2": "<p>Delivary &amp; Returns </p>",
         "ggf-8kx5HRC_viewMoreText": "Show more",
         "ggf-8kx5HRC_viewLessText": "Show less",
         "ggbC65Id7JT_text": "<p>If you are between sizes or prefer a less compressive fit, size up. Our fabric stretches up to 1.3x its original, but for best comfort choose the size where your measurement falls near the middle of the range.</p>",
-        "ggWmQr408Hi_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul><li><strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li><li><strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li><li><strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li></ul>",
+        "ggWmQr408Hi_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul>\n<li>\n<strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li>\n<li>\n<strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li>\n<li>\n<strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li>\n</ul>",
         "ggUYzQr7D_H_text": "<strong>You may also like</strong>"
       }
     },
     "gp_shopify_original_section_600910001325736805": {
       "type": "gp-section-600910001325736805",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_605137170314822625": {
       "type": "gp-section-605137170314822625",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_605722789759943428": {
       "type": "gp-section-605722789759943428",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_612968786202461027": {
       "type": "gp-section-612968786202461027",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggS40PKAeR5_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:16px;\">Sign up and get access to our next fitness event, 10% off your first order and exclusive perks.</span></p>",
-        "gg6SwMkPru9_text": "<span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:medium;\">GET EXCLUSIVE &nbsp;PERKS FROM US.</span>",
+        "gg6SwMkPru9_text": "<span style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);font-size:medium;\">GET EXCLUSIVE  PERKS FROM US.</span>",
         "gg1ZUh6D0rd_text": "<p>Sign up to be the first to hear about exclusive deals, special offers and upcoming collections</p>",
         "ggO5DnKR52z_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "ggO5DnKR52z_errorMessage": "Can’t send email. Please try again later.",
@@ -123,7 +147,7 @@
             "large_first_image": false,
             "icons_style": "none",
             "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
+            "slideshow_mobile_controls_style": "thumbnails",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
             "thumbnail_radius": 0,
@@ -152,7 +176,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 28,
+            "gap": 0,
             "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "scheme-1",
@@ -163,12 +187,101 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "quantity": {
+                  "type": "quantity",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "complete_the_look": {
+              "type": "product-recommendations",
+              "name": "Complete the look",
+              "settings": {
+                "recommendation_type": "complementary",
+                "layout_type": "grid",
+                "carousel_on_mobile": false,
+                "max_products": 3,
+                "columns_gap": 16,
+                "rows_gap": 24,
+                "icons_style": "arrow",
+                "icons_shape": "none",
+                "gap": 28,
+                "border_radius": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "complete_the_look_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2>Complete the look</h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "complete_the_look_heading"
+              ]
+            },
             "group_icgrde": {
               "type": "group",
               "name": "Header",
@@ -234,98 +347,300 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
+                "text_xrnftG"
               ]
             },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
+            "price_QK4BBM": {
+              "type": "price",
               "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "paragraph",
+                "width": "100%",
                 "alignment": "left",
-                "padding-block-start": 0,
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
+            "product_accordion_info": {
+              "type": "accordion",
               "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "gift_card_form": true,
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
+                "care_row": {
+                  "type": "_accordion-row",
                   "settings": {
-                    "style_class": "button"
+                    "heading": "Care instructions",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
                   },
-                  "blocks": {}
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Follow the care instructions on the garment label.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
                 },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
+                "material_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "About the material",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>78% Nylon | 22% Spandex</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
+                },
+                "model_details_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Model details",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>The model is wearing size S.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
+                },
+                "product_details_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Product details",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Peach-soft finished fabric, high support, scoop neck, open back, removable bra pads, and a thick underband for extra stability.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
+                },
+                "shipping_returns_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Shipping & Returns",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Returns are accepted within 30 days of delivery when items are unworn and have their original tags attached. See our Shipping and Returns pages for full details.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
+                },
+                "size_fit_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Size & Fit",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>True to size. If you are between sizes or prefer a less compressive fit, size up. The fabric stretches up to 1.3 times its flat size.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text"
+                  ]
                 }
               },
-              "block_order": []
+              "block_order": [
+                "product_details_row",
+                "size_fit_row",
+                "material_row",
+                "care_row",
+                "shipping_returns_row",
+                "model_details_row"
+              ]
             },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
+              "disabled": true,
               "settings": {
                 "text": "{{ closest.product.description }}",
                 "width": "100%",
@@ -348,18 +663,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_icgrde",
-            "divider_VJhene",
             "variant_picker_R3rGDr",
+            "price_QK4BBM",
             "buy_buttons_eYQEYi",
+            "product_accordion_info",
+            "complete_the_look",
             "text_aEtTtq"
           ]
         }
       },
-      "disabled": true,
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
@@ -375,6 +704,94 @@
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        },
         "text_cbcgyb": {
           "type": "text",
           "name": "t:names.header",
@@ -400,94 +817,6 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
-          "settings": {
-            "product_card_gap": 8,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 8,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_DNizbJ": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title_M7MJkb": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_gLWgA6": {
-              "type": "price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_gallery_DNizbJ",
-            "product_title_M7MJkb",
-            "price_gLWgA6"
-          ]
         }
       },
       "block_order": [
@@ -514,16 +843,5 @@
         "padding-block-end": 48
       }
     }
-  },
-  "order": [
-    "main",
-    "product_recommendations_qggXJq",
-    "gp_shopify_original_section_600490589531669141",
-    "gp_shopify_original_section_600910001325736805",
-    "gp_shopify_original_section_605137170314822625",
-    "gp_shopify_original_section_605722789759943428",
-    "gp_shopify_original_global_section_602852479155045298-1",
-    "gp_shopify_original_section_612968786202461027",
-    "gp_shopify_original_global_section_602851221115503244-2"
-  ]
+  }
 }

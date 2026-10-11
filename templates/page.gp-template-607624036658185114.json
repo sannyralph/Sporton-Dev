@@ -11,51 +11,46 @@
   "sections": {
     "gp_section_607624036708582298": {
       "settings": {
-        "checksum": "ccad4e316c3f687f6c96694a73c0b64419f23604579d46d5b178d1db75e32d1f_1_1_1_0__1",
+        "checksum": "ccad4e316c3f687f6c96694a73c0b64419f23604579d46d5b178d1db75e32d1f_1_1_0_0__1",
         "section_preload": "true"
       },
       "type": "gp-section-607624036708582298"
     },
     "gp_section_607624036708647834": {
       "settings": {
-        "checksum": "bf19e64f7926ec852527813e847a709e2c7a82276bf168900fba047b394f28a3_1_1_1_0__1",
+        "checksum": "bf19e64f7926ec852527813e847a709e2c7a82276bf168900fba047b394f28a3_1_1_0_0__1",
         "ggOWQIHOzoT_text": "Returns",
-        "ggooqwt1drQ_text": "We want you to be fully satisfied with your purchase.<br><strong>We offer free returns</strong><br>Simply email your order details to <a href=\"mailto:support@sporton.store\" target=\"_blank\">support@sporton.store</a> to process your return or If you have any further questions.<br>&nbsp;",
-        "section_preload": "true"
+        "ggooqwt1drQ_text": "We want you to be fully satisfied with your purchase.<br><strong>We offer free returns</strong><br>Simply email your order details to <a href=\"mailto:support@sporton.store\" target=\"_blank\">support@sporton.store</a> to process your return or If you have any further questions.<br>&nbsp;"
       },
       "type": "gp-section-607624036708647834"
     },
     "gp_section_607624036708713370": {
       "settings": {
-        "checksum": "9c96250b7d9c079074790009688ce136c48b293708969375498b8df1596ee512_1_1_1_0__1",
-        "gg-r9OwYZcS_text": "Shipping Policy",
-        "section_preload": "true"
+        "checksum": "9c96250b7d9c079074790009688ce136c48b293708969375498b8df1596ee512_1_1_0_0__1",
+        "gg-r9OwYZcS_text": "Shipping Policy"
       },
       "type": "gp-section-607624036708713370"
     },
     "gp_section_607624036708778906": {
       "settings": {
-        "checksum": "26a58968b555e7e657edb911a41e9503699c7653a731141b4f1e5aea78f32416_1_1_1_0__1",
-        "section_preload": "true"
+        "checksum": "26a58968b555e7e657edb911a41e9503699c7653a731141b4f1e5aea78f32416_1_1_0_0__1"
       },
       "type": "gp-section-607624036708778906"
     },
     "gp_section_607624036708844442": {
       "settings": {
-        "checksum": "a6873eadebf49a00d9a7f3969588f8a9b95d48b4b85d964d47958becdd76782b_1_1_1_0__1",
+        "checksum": "a6873eadebf49a00d9a7f3969588f8a9b95d48b4b85d964d47958becdd76782b_1_1_0_0__1",
         "gg29nd-bfTZ_text": "<p>Coffee's mission is to offer love and hope to those in need through funds from a great cup of coffee. We want to inspire and educate our coffee lovers in ways that enhance their experience with us and encourage them to be an outlet of hope for others.&nbsp;<br><br>We want to create a coffee culture that is built around quality, sociability, and affordability so that everyone can enjoy our product and share in our outreach. Our goal is to continue to grow our business in ways that will allow us to give more, this will include things like scholarships for local graduating seniors, food programs, and much more! We have BIG plans for coffee and appreciate you joining us on this journey!</p>",
         "ggN01zpKmAz_text": "At Sporton, we believe your order should arrive quickly, safely, and without hassle, wherever you are! Here’s everything you need to know about our shipping and returns.<br><br>We currently ship nationwide and across Europe, with plans to expand even further!<ul><li><strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li><li><strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li><li><strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li></ul>",
         "ggppQ934ZMH_text": "<p>Our Mission &amp; Vision</p>",
-        "ggvAZf1NHy7_text": "Shipping rates",
-        "section_preload": "true"
+        "ggvAZf1NHy7_text": "Shipping rates"
       },
       "type": "gp-section-607624036708844442"
     },
     "gp_section_607625204687963034": {
       "settings": {
-        "checksum": "a6b4091a636763f24f1e56c991cf1647d9d31954d1f2fb0cc015e2aceb000dad_1_1_1_0__1",
-        "ggjiVoO3Y6H_text": "<strong>Europe:</strong><ul><li>Flat rate: €4.99</li><li>Free shipping on all orders above €60</li></ul>&nbsp;<br><strong>Countries outside Europe:</strong><ul><li>Flat rate: €15</li><li>Free shipping for orders above €100</li></ul>",
-        "section_preload": "true"
+        "checksum": "a6b4091a636763f24f1e56c991cf1647d9d31954d1f2fb0cc015e2aceb000dad_1_1_0_0__1",
+        "ggjiVoO3Y6H_text": "<strong>Europe:</strong><ul><li>Flat rate: €4.99</li><li>Free shipping on all orders above €60</li></ul>&nbsp;<br><strong>Countries outside Europe:</strong><ul><li>Flat rate: €15</li><li>Free shipping for orders above €100</li></ul>"
       },
       "type": "gp-section-607625204687963034"
     }

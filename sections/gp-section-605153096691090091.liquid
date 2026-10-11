@@ -16,7 +16,12 @@
           style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:none;--pl-tablet:none;--pl-mobile:none;--pr:none;--pr-tablet:none;--pr-mobile:none"
         >
           
-    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#ffffff","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gBtPdIruq1"}' data-id="gBtPdIruq1" id="gBtPdIruq1" data-same-height-subgrid-container class="gBtPdIruq1 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--blockPadding:base;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:80px;--pl:60px;--pb:48px;--pr:60px;--pt-mobile:28px;--pl-mobile:15px;--pb-mobile:28px;--pr-mobile:15px;--pt-tablet:32px;--pl-tablet:15px;--pb-tablet:32px;--pr-tablet:15px;--cg:32px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+    <gp-row
+      data-id="gBtPdIruq1" id="gBtPdIruq1" data-same-height-subgrid-container
+      class="gBtPdIruq1 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+      style="--blockPadding:base;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--op-mobile:100%;--op-tablet:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:80px;--pl:60px;--pb:48px;--pr:60px;--pt-mobile:28px;--pl-mobile:15px;--pb-mobile:28px;--pr-mobile:15px;--pt-tablet:32px;--pl-tablet:15px;--pb-tablet:32px;--pr-tablet:15px;--cg:32px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start"
+    >
+      <script gp-data type="application/json">{"background":{"desktop":{"attachment":"scroll","color":"#ffffff","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gBtPdIruq1"}</script>
       
 
       <div
@@ -83,15 +88,18 @@
       {%-if variant == empty or variant == null -%}
         {%- assign variant = product.selected_or_first_available_variant -%}
       {%- endif -%}
+      {% unless isSettingSameHeightProductList %}
+        {%- assign isSettingSameHeightProductList = false -%}
+      {% endunless %}
     
       <gp-product
         data-uid="gvsorf8_Uk"
         data-id="gvsorf8_Uk"
         
         
-        gp-context='{"productId": {{ product.id }}, "preSelectedOptionIds": [], "isSyncProduct": "true", "hasPreSelected": true, "variantSelected": {{ variant | json | escape }},  "inventory_management": {{ variant.inventory_management | json | escape  }}, "inventory_policy": {{ variant.inventory_policy | json | escape }}, "inventoryQuantity": {{ variant.inventory_quantity }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
-        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'
+        gp-context='{"productId": {{ product.id }}, "preSelectedOptionIds": [], "isSyncProduct": "true", "hasPreSelected": true, "variantSelected": {{ variant | json | escape }},  "inventory_management": {{ variant.inventory_management | json | escape  }}, "inventory_policy": {{ variant.inventory_policy | json | escape }}, "inventoryQuantity": {{ variant.inventory_quantity | default: 0 }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
       >
+        <script gp-data type="application/json">{"variantSelected": {{ variant | json }}, "quantity": 1, "productUrl":{{ product.url | json }}, "productHandle":{{ product.handle | json }}, "collectionUrl": {{ collection.url | json }}, "collectionHandle": {{ collection.handle | json }}}</script>
         <product-form class="product-form">
           {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
             <input type="hidden" name="id" value="{{ variant.id }}" />
@@ -103,7 +111,12 @@
     
 
     
-    <gp-row gp-data='{"background":{"desktop":{"type":"color","color":"transparent"}},"uid":"gvsorf8_Uk"}' data-id="gvsorf8_Uk-row" id="gvsorf8_Uk" data-same-height-subgrid-container class="gvsorf8_Uk gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--cg:32px;--rg:32px;--rg-mobile:16px;--gtc:minmax(0, 12fr);--w:100%;--bgc:transparent;--bgi:url();--pc:start">
+    <gp-row
+      data-id="gvsorf8_Uk-row" id="gvsorf8_Uk" data-same-height-subgrid-container
+      class="gvsorf8_Uk gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]"
+      style="--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--cg:32px;--rg:32px;--rg-mobile:16px;--gtc:minmax(0, 12fr);--w:100%;--bgc:transparent;--bgi:url();--pc:start"
+    >
+      <script gp-data type="application/json">{"background":{"desktop":{"type":"color","color":"transparent"}},"uid":"gvsorf8_Uk"}</script>
       
 
       <div
@@ -114,7 +127,7 @@
       
   
     <div
-      
+      data-id="gePp69ds_R"
       style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--ta:left;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
       data-keep-class="true"
       class="gePp69ds_R gp-custom-code">

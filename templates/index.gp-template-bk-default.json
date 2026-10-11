@@ -8,26 +8,46 @@
  * ------------------------------------------------------------
  */
 {
+  "order": [
+    "hero_jVaWmY",
+    "product_list_fa6P9H",
+    "gp_shopify_original_section_600515861823881877",
+    "gp_shopify_original_section_604253741578715823",
+    "custom_product_slider_bQz8QP",
+    "gp_shopify_original_section_600648752440541771",
+    "gp_shopify_original_section_600655086191903307",
+    "gp_shopify_original_section_600649024952861333",
+    "gp_shopify_original_section_600773683643941733",
+    "gp_shopify_original_global_section_612971586319811131-1",
+    "gp_shopify_original_section_600776111323874156",
+    "gp_shopify_original_global_section_602852479155045298-2",
+    "gp_shopify_original_global_section_602851221115503244-3"
+  ],
   "sections": {
+    "custom_product_slider_bQz8QP": {
+      "type": "custom-product-slider",
+      "name": "Product Slider",
+      "settings": {
+        "heading": "New Arrivals",
+        "subheading": "Discover the latest styles",
+        "view_all_text": "View All",
+        "collection": "best-sellers",
+        "products_to_show": 4
+      }
+    },
     "gp_shopify_original_global_section_602851221115503244-3": {
       "type": "gp-global-section-602851221115503244",
       "settings": {
         "section_preload": "false",
         "checksum": "",
         "ggOfNoCt_Oo_text": "<br>About sporton",
-        "ggqDNlegQVG_text": "Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally.&nbsp;",
+        "ggqDNlegQVG_text": "Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally. ",
         "gg79jzxBDBY_text": "Product",
-        "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a>&nbsp;",
-        "gganOxaMGOq_text": "About &nbsp;",
-        "ggjaMurHQIW_text": "<a href=\"https://sporton.store/pages/contact\"><u>Contact&nbsp;</u></a>",
-        "gg8MAPdxPe4_text": "<a href=\"https://sporton.store/pages/Affiliates\"><u>Affiliates</u></a>",
+        "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a> ",
+        "gganOxaMGOq_text": "About  ",
         "ggOI62S6cgB_text": "Delivary &amp; Returns",
-        "gg2SJB2FT9j_text": "<a href=\"$locationOrigin/pages/shipping-policy\"><u>Shipping</u></a>",
-        "ggEhEqvYlwF_text": "<a href=\"$locationOriginpages/return-and-refund-policy\"><u>Returns</u></a>",
-        "gg9piXg5rBN_text": "Legal &nbsp;",
-        "gguj75VIlAU_text": "<a href=\"$locationOrigin/pages/terms-of-service\"><u>Terms + Conditions&nbsp;</u></a>",
-        "ggJDJsGjCrZ_text": "<a href=\"$locationOrigin/pages/privacy-policy\"><u>Privacy Policy</u></a>",
-        "ggqDeC2uR1k_text": "Gift someone you love&nbsp;",
+        "gg9piXg5rBN_text": "Legal  ",
+        "ggqDeC2uR1k_text": "Gift someone you love ",
         "gg6AR3WOPAx_text": "Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved."
       }
     },
@@ -43,7 +63,7 @@
         "ggcFCEbWrDt_text": "Every Sporton product page includes a detailed size chart and helpful fit notes. We also show the height and size of our models, so you can get a clearer visual idea of how each item fits on different body types. If you’re between sizes, we suggest sizing up for a roomier fit, or you can always reach out to our customer support for personalized sizing advice.",
         "gg8u6UFRdg8_childItem_0": "Where do you ship, and how long does delivery take?",
         "gg8u6UFRdg8_childItem_1": "What is your return and exchange policy?",
-        "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul><li><strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li><li><strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li><li><strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li></ul>",
+        "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul>\n<li>\n<strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li>\n<li>\n<strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li>\n<li>\n<strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li>\n</ul>",
         "ggzHGApmpcf_text": "We accept returns and exchanges within 30 days of delivery as long as items are unworn and with original tags attached. To initiate a return or exchange, simply visit our [Returns Portal] or contact us at <a href=\"mailto:support@sporton.com\" target=\"_blank\">support@sporton.</a>store",
         "gguWVpth1AF_childItem_0": "Is Sporton quality really that special?",
         "gguWVpth1AF_childItem_1": "Are your fabrics and materials sustainable?",
@@ -61,7 +81,7 @@
         "section_preload": "false",
         "checksum": "",
         "ggEXB16zK_4_text_-1840396134": "Sign up and get access to our next fitness event, 10% off your first order and exclusive perks.",
-        "ggBjKIH6o08_text_-1722079293": "GET EXCLUSIVE &nbsp;PERKS FROM US.",
+        "ggBjKIH6o08_text_-1722079293": "GET EXCLUSIVE  PERKS FROM US.",
         "gg-Et2tYAms_successMessage_-996757296": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "gg-Et2tYAms_errorMessage_-1125111609": "Can’t send email. Please try again later.",
         "ggWUB4GvP-h_placeholder_1756795826": "NAME",
@@ -81,14 +101,16 @@
     },
     "gp_shopify_original_section_600648752440541771": {
       "type": "gp-section-600648752440541771",
+      "disabled": true,
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggVZXUVpwGI_text": "PRODUCTS OF THE MONTH",
         "ggfw5PxljAn_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-beige-sport-bra-_-leggings.webp",
         "ggfw5PxljAn_background_tablet_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-beige-sport-bra-_-leggings.webp",
         "ggfw5PxljAn_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-beige-sport-bra-_-leggings.webp",
         "gg0Z9cFkZtK_text": "Up to 20% Off",
-        "ggEohDyH1ty_text": "<p>products of the month&nbsp;</p>",
+        "ggEohDyH1ty_text": "<p>products of the month </p>",
         "ggd0OMIgoO__label": "Shop Now",
         "gg22qBBkYop_displayContent": "- {percent_discount}",
         "ggNLUuWBg8N_label": "shop now",
@@ -109,6 +131,7 @@
     "gp_shopify_original_section_600649024952861333": {
       "type": "gp-section-600649024952861333",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggRo5JXBe0F_text": "FIND THE RIGHT FITS FOR YOUR ROUTINE",
         "gg2BmBqlZ2g_text": "<p>Workout fits, designed with your fitness needs in mind.</p>",
@@ -117,7 +140,7 @@
         "ggVmGuDBHJR_background_mobile_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
         "ggi0_6S4QXl_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-Athleisure-fit.webp",
         "ggi0_6S4QXl_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-Athleisure-fit.webp",
-        "ggL2436-hbi_text": "Athleisure&nbsp;",
+        "ggL2436-hbi_text": "Athleisure ",
         "ggya-AXPQWK_label": "Shop Now",
         "gg4GEUWDPFm_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-Cardio-fit.webp",
         "ggZVDb4b06r_text": "Cardio",
@@ -134,21 +157,23 @@
     "gp_shopify_original_section_600655086191903307": {
       "type": "gp-section-600655086191903307",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggVq4hGY7bJ_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/hero-image.webp",
         "ggVq4hGY7bJ_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/hero-mobile.webp",
         "ggVq4hGY7bJ_background_mobile_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
         "gg1TxGaTqRl_text": "NOW THE PERFECT TIME TO START",
-        "ggP495uBFsy_label": "<p>SHOP NOW&nbsp;</p>"
+        "ggP495uBFsy_label": "<p>SHOP NOW </p>"
       }
     },
     "gp_shopify_original_section_600773683643941733": {
       "type": "gp-section-600773683643941733",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggY2O9cielq_text": "EXPLORE OUR BEST SELLERS",
-        "gg9YeKVLdm1_childItem_0": "<p>All in one&nbsp;</p>",
-        "gg9YeKVLdm1_childItem_1": "<p>Tops&nbsp;</p>",
+        "gg9YeKVLdm1_childItem_0": "<p>All in one </p>",
+        "gg9YeKVLdm1_childItem_1": "<p>Tops </p>",
         "gg9YeKVLdm1_childItem_2": "<p>Bottoms</p>",
         "ggycStbYtO4_label": "ADD TO CART",
         "ggycStbYtO4_outOfStockLabel": "Out Of Stock",
@@ -175,23 +200,40 @@
     "gp_shopify_original_section_600776111323874156": {
       "type": "gp-section-600776111323874156",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_604253741578715823": {
       "type": "gp-section-604253741578715823",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggqMi2UiuPJ_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/hero-picture.png",
         "ggqMi2UiuPJ_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/sporton-Strength-fit.webp",
         "ggqMi2UiuPJ_background_mobile_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
-        "ggMZSwYjSUx_text": "FOR THOSE WHO&nbsp;<br>DESIRE TO BE BETTER&nbsp;",
+        "ggMZSwYjSUx_text": "FOR THOSE WHO <br>DESIRE TO BE BETTER ",
         "ggIKkKXe4ED_label": "<p>START HERE</p>"
       }
     },
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "button_H9gpTf": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop all",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
@@ -215,21 +257,6 @@
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
           },
           "blocks": {}
         }
@@ -308,6 +335,20 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "product_list_button_MWeP9V": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "View all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
             "product_list_text_YFtzcL": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
@@ -331,20 +372,6 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_MWeP9V": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
               },
               "blocks": {}
             }
@@ -372,6 +399,29 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "price_JQzVV4": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "product_card_gallery_677WP3": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
@@ -412,29 +462,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "price_JQzVV4": {
-              "type": "price",
-              "name": "t:names.product_price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
@@ -466,19 +493,5 @@
         "padding-block-end": 48
       }
     }
-  },
-  "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H",
-    "gp_shopify_original_section_600515861823881877",
-    "gp_shopify_original_section_604253741578715823",
-    "gp_shopify_original_section_600648752440541771",
-    "gp_shopify_original_section_600655086191903307",
-    "gp_shopify_original_section_600649024952861333",
-    "gp_shopify_original_section_600773683643941733",
-    "gp_shopify_original_global_section_612971586319811131-1",
-    "gp_shopify_original_section_600776111323874156",
-    "gp_shopify_original_global_section_602852479155045298-2",
-    "gp_shopify_original_global_section_602851221115503244-3"
-  ]
+  }
 }

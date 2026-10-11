@@ -11,17 +11,21 @@
   "sections": {
     "gp_section_605154072235868847": {
       "settings": {
-        "checksum": "3741d47216674978f0c57fac1989fffb073530e07d337b4255720a85ea0bffe3_1_1_1_0__1",
+        "checksum": "3741d47216674978f0c57fac1989fffb073530e07d337b4255720a85ea0bffe3_1_1_0_0__1",
         "ggRG9rr5omU_childItem_0": "<p>Material</p>",
         "ggRG9rr5omU_childItem_1": "<p>Find &nbsp;Your Size</p>",
         "ggRG9rr5omU_childItem_2": "<p>Delivary &amp; Returns&nbsp;</p>",
+        "ggRGbg1SXYE_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/size-chart.webp",
         "ggT59VKQVpy_text": "<ul><li>Seamless design</li><li>Halter neck strap</li><li>Open back design</li><li>High stretch &amp; durable fabric</li><li>Medium support</li><li>Removable bra pads</li><li>90% Nylon | 10% Elastane</li></ul>",
         "ggY2Ys1HWh2_viewLessText": "Show less",
         "ggY2Ys1HWh2_viewMoreText": "Show more",
         "ggeVCqozCme_text": "<p>The model is ........ and she wear a size ......&nbsp;</p>",
+        "gge_BkZpLPq_errorMessage": "Cannot add product to cart",
         "gge_BkZpLPq_label": "Add to cart",
         "gge_BkZpLPq_outOfStockLabel": "Out of stock",
+        "gge_BkZpLPq_successMessage": "Add product to cart successfully",
         "gge_BkZpLPq_unavailableLabel": "Unavailable",
+        "ggkJWJOgbUo_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/size-chart_f1fa2366-0c64-40b0-93c7-3325e4f4ee42.webp",
         "ggrOePJbLxr_displayContent": "{percent_discount} off",
         "ggwOCfnHDYk_text": "<p>We offer <strong>free returns</strong> for all orders from the UK, Mainland USA, Canada, EU, and Australia. See more <a href=\"https://www.dfyne.com/pages/returns\">here</a>.</p><p>&nbsp;</p><p><strong>Express shipping is our&nbsp;standard</strong></p><p>For&nbsp;tracked shipments, your tracking information will be included in your shipping confirmation email. You can also log into your account and hit '<i>view my order</i>' to find your tracking information once the order has been dispatched.</p><p>&nbsp;</p><p>You can also use our <a href=\"https://dfyne.com/community/track-my-order\">tracking portal here to track your order.</a></p><p>All orders made before <strong><u>3pm GMT Monday - Friday</u> will be dispatched same day.</strong></p>",
         "section_preload": "true"
@@ -30,7 +34,7 @@
     },
     "gp_section_605154072235934383": {
       "settings": {
-        "checksum": "9073f67cb1c62ca1a860dcd7d42147ff5a993227a9ffbdf3abb72d85281fbcf0_1_1_1_0__1"
+        "checksum": "9073f67cb1c62ca1a860dcd7d42147ff5a993227a9ffbdf3abb72d85281fbcf0_1_1_0_0__1"
       },
       "type": "gp-section-605154072235934383"
     }

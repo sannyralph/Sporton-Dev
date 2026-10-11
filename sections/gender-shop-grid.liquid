@@ -1,0 +1,309 @@
+{% comment %}
+  Sporton — Shop by Gender grid section
+  Renders a WOMENS / MENS toggle. Each toggle shows its own row of
+  category cards (image + label) linking to collections.
+  Mirrors the DFYNE-style "shop by category" component.
+{% endcomment %}
+
+<gender-shop-grid class="gender-shop-grid color-{{ section.settings.color_scheme }}">
+  <div class="gender-shop-grid__container page-width">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="gender-shop-grid__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="gender-shop-grid__toggle" role="tablist" aria-label="Shop by gender">
+      <button
+        type="button"
+        class="gender-shop-grid__toggle-btn is-active"
+        data-gender="womens"
+        role="tab"
+        aria-selected="true"
+      >
+        {{ section.settings.womens_label | default: 'WOMENS' }}
+      </button>
+      <button
+        type="button"
+        class="gender-shop-grid__toggle-btn"
+        data-gender="mens"
+        role="tab"
+        aria-selected="false"
+      >
+        {{ section.settings.mens_label | default: 'MENS' }}
+      </button>
+    </div>
+
+    <div class="gender-shop-grid__track" data-active-gender="womens">
+      {% for block in section.blocks %}
+        {% if block.type == 'category_card' %}
+          {% liquid
+            assign card_gender = block.settings.gender
+            assign card_link = block.settings.link
+            assign card_image = block.settings.image
+            assign card_label = block.settings.label
+          %}
+          <a
+            href="{{ card_link | default: '#' }}"
+            class="gender-shop-grid__card"
+            data-gender="{{ card_gender }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="gender-shop-grid__card-media">
+              {% if card_image %}
+                {{
+                  card_image
+                  | image_url: width: 900
+                  | image_tag:
+                    loading: 'lazy',
+                    alt: card_label | default: card_image.alt,
+                    sizes: '(min-width: 990px) 25vw, 50vw',
+                    widths: '450, 600, 900'
+                }}
+              {% else %}
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'gender-shop-grid__placeholder' }}
+              {% endif %}
+            </div>
+            <div class="gender-shop-grid__card-footer">
+              <span class="gender-shop-grid__card-label">{{ card_label }}</span>
+              <span class="gender-shop-grid__card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
+                  <path d="M6.5 4.5L10 8L6.5 11.5" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</gender-shop-grid>
+
+<script>
+  (function () {
+    class GenderShopGrid extends HTMLElement {
+      connectedCallback() {
+        this.track = this.querySelector('.gender-shop-grid__track');
+        this.buttons = this.querySelectorAll('.gender-shop-grid__toggle-btn');
+        this.cards = this.querySelectorAll('.gender-shop-grid__card');
+
+        this.buttons.forEach((btn) => {
+          btn.addEventListener('click', () => this.setGender(btn.dataset.gender));
+        });
+
+        this.setGender(this.track.dataset.activeGender || 'womens');
+      }
+
+      setGender(gender) {
+        this.track.dataset.activeGender = gender;
+
+        this.buttons.forEach((btn) => {
+          const isActive = btn.dataset.gender === gender;
+          btn.classList.toggle('is-active', isActive);
+          btn.setAttribute('aria-selected', isActive);
+        });
+
+        this.cards.forEach((card) => {
+          card.style.display = card.dataset.gender === gender ? '' : 'none';
+        });
+      }
+    }
+
+    if (!customElements.get('gender-shop-grid')) {
+      customElements.define('gender-shop-grid', GenderShopGrid);
+    }
+  })();
+</script>
+
+{% stylesheet %}
+  .gender-shop-grid {
+    padding-block: var(--padding-2xl, 48px);
+  }
+
+  .gender-shop-grid__heading {
+    text-align: center;
+    font-size: var(--font-heading-h2--size, 2rem);
+    margin-bottom: var(--margin-lg, 24px);
+  }
+
+  .gender-shop-grid__toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: var(--margin-lg, 24px);
+  }
+
+  .gender-shop-grid__toggle-btn {
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+    background: transparent;
+    color: rgb(var(--color-foreground-rgb));
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .gender-shop-grid__toggle-btn.is-active {
+    background: rgb(var(--color-foreground-rgb));
+    color: rgb(var(--color-background-rgb));
+    border-color: rgb(var(--color-foreground-rgb));
+  }
+
+  .gender-shop-grid__track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-md, 16px);
+  }
+
+  .gender-shop-grid__card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--style-border-radius-images, 4px);
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+  }
+
+  .gender-shop-grid__card-media {
+    position: absolute;
+    inset: 0;
+  }
+
+  .gender-shop-grid__card-media img,
+  .gender-shop-grid__placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gender-shop-grid__card-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    color: #fff;
+    background: linear-gradient(to top, rgb(0 0 0 / 0.55), transparent 60%);
+  }
+
+  .gender-shop-grid__card-label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .gender-shop-grid__card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgb(255 255 255 / 0.8);
+  }
+
+  @media screen and (max-width: 989px) {
+    .gender-shop-grid__track {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .gender-shop-grid__toggle-btn {
+      padding: 8px 18px;
+      font-size: 0.8rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Shop by gender",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Shop by category"
+    },
+    {
+      "type": "text",
+      "id": "womens_label",
+      "label": "Womens toggle label",
+      "default": "WOMENS"
+    },
+    {
+      "type": "text",
+      "id": "mens_label",
+      "label": "Mens toggle label",
+      "default": "MENS"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category_card",
+      "name": "Category card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "gender",
+          "label": "Show under",
+          "options": [
+            { "value": "womens", "label": "Womens" },
+            { "value": "mens", "label": "Mens" }
+          ],
+          "default": "womens"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "T-SHIRTS & TOPS"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link to collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by gender",
+      "blocks": [
+        { "type": "category_card", "settings": { "gender": "womens", "label": "TOPS & SPORT BRAS" } },
+        { "type": "category_card", "settings": { "gender": "womens", "label": "SHORTS" } },
+        { "type": "category_card", "settings": { "gender": "womens", "label": "PANTS & LEGGINGS" } },
+        { "type": "category_card", "settings": { "gender": "womens", "label": "SOCKS" } },
+        { "type": "category_card", "settings": { "gender": "mens", "label": "T-SHIRTS & TOPS" } },
+        { "type": "category_card", "settings": { "gender": "mens", "label": "SHORTS" } },
+        { "type": "category_card", "settings": { "gender": "mens", "label": "SOCKS" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

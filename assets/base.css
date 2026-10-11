@@ -2,6 +2,56 @@
   box-sizing: border-box;
 }
 
+/* Sporton: compact product accordion text */
+.product-information accordion-custom rte-formatter .metafield-rich_text_field,
+.product-information accordion-custom rte-formatter .metafield-rich_text_field p,
+.product-information accordion-custom rte-formatter .metafield-rich_text_field li {
+  font-size: 12px !important;
+  line-height: 1.55 !important;
+  font-weight: 400 !important;
+      color: #757575 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Remove excessive spacing created by the rich-text editor */
+.product-information accordion-custom rte-formatter .metafield-rich_text_field {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.product-information accordion-custom rte-formatter .metafield-rich_text_field p {
+  margin: 0 0 10px !important;
+}
+
+.product-information accordion-custom rte-formatter .metafield-rich_text_field ul,
+.product-information accordion-custom rte-formatter .metafield-rich_text_field ol {
+  margin: 2px 0 14px !important;
+  padding-left: 20px !important;
+}
+
+.product-information accordion-custom rte-formatter .metafield-rich_text_field li {
+  margin: 0 0 7px !important;
+  padding: 0 !important;
+}
+
+/* Keep labels such as Fit, Length, Sizing and Stretch emphasized */
+.product-information accordion-custom rte-formatter .metafield-rich_text_field strong,
+.product-information accordion-custom rte-formatter .metafield-rich_text_field b {
+  font-size: inherit !important;
+  font-weight: 600 !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .product-information accordion-custom rte-formatter .metafield-rich_text_field,
+  .product-information accordion-custom rte-formatter .metafield-rich_text_field p,
+  .product-information accordion-custom rte-formatter .metafield-rich_text_field li {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    color: #757575 !important;
+  }
+}
+
 /* Sporton: Complete the Look — compact form controls */
 .complete-look-card__form {
   display: flex !important;

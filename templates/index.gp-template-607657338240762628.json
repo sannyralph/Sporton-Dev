@@ -10,37 +10,37 @@
 {
   "sections": {
     "gp_section_607657365654733722": {
+      "type": "gp-section-607657365654733722",
       "settings": {
         "checksum": "b612e5ffd80deb05ec076e8519822ce6905f7f40c7f52b4a097985dd6b076c4c_1_1_1_0__1",
-        "gg-HiDWyPlI_label": "ADD TO CART",
-        "gg-HiDWyPlI_outOfStockLabel": "Out Of Stock",
-        "gg-HiDWyPlI_unavailableLabel": "Unavailable",
-        "gg4EEYSqSFl_label": "ADD TO CART",
-        "gg4EEYSqSFl_outOfStockLabel": "Out Of Stock",
-        "gg4EEYSqSFl_unavailableLabel": "Unavailable",
-        "gg4enTJyPyD_displayContent": "{percent_discount} off",
-        "gg7e7FW8KsG_label": "View All",
-        "ggBUj1KEuux_label": "View All",
+        "ggePZLShBTr_text": "EXPLORE OUR BEST SELLERS",
         "ggJXwGPfzez_childItem_0": "<p>All in one&nbsp;</p>",
         "ggJXwGPfzez_childItem_1": "<p>Tops&nbsp;</p>",
         "ggJXwGPfzez_childItem_2": "<p>Bottoms</p>",
         "ggMn65ZyNSi_label": "ADD TO CART",
         "ggMn65ZyNSi_outOfStockLabel": "Out Of Stock",
         "ggMn65ZyNSi_unavailableLabel": "Unavailable",
+        "ggvmrxpO2D7_label": "View All",
         "gga7jxXlK7B_displayContent": "{percent_discount} off",
-        "ggePZLShBTr_text": "EXPLORE OUR BEST SELLERS",
-        "ggvmrxpO2D7_label": "View All"
-      },
-      "type": "gp-section-607657365654733722"
+        "gg4EEYSqSFl_label": "ADD TO CART",
+        "gg4EEYSqSFl_outOfStockLabel": "Out Of Stock",
+        "gg4EEYSqSFl_unavailableLabel": "Unavailable",
+        "ggBUj1KEuux_label": "View All",
+        "gg4enTJyPyD_displayContent": "{percent_discount} off",
+        "gg-HiDWyPlI_label": "ADD TO CART",
+        "gg-HiDWyPlI_outOfStockLabel": "Out Of Stock",
+        "gg-HiDWyPlI_unavailableLabel": "Unavailable",
+        "gg7e7FW8KsG_label": "View All"
+      }
     },
     "gp_section_607657638620038042": {
+      "type": "gp-section-607657638620038042",
       "settings": {
+        "section_preload": "true",
         "checksum": "dac0f02eba4ad708bb33b54da19ea0aba70f569a6d25c0c2f9215c42ea603959_1_1_1_0__1",
         "gg1ai0QWDbh_text": "FOR THOSE WHO&nbsp;<br>DESIRE TO BE BETTER&nbsp;",
-        "ggrTlnmp5yZ_label": "<p>START HERE</p>",
-        "section_preload": "true"
-      },
-      "type": "gp-section-607657638620038042"
+        "ggrTlnmp5yZ_label": "<p>START HERE</p>"
+      }
     }
   },
   "order": [

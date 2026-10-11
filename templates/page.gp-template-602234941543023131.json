@@ -9,13 +9,23 @@
  */
 {
   "sections": {
-    "hero_N493VV": {
+    "gp_section_602235078512214724": {
+      "type": "gp-section-602235078512214724",
+      "disabled": true,
+      "settings": {
+        "section_preload": "true",
+        "checksum": "70cdcff4498126cdc350283df956d6d1b755c8633bc3449094cd6bea12b81200_1_1_1_0__1",
+        "ggh_FFdn_rr_text": "<p>STAY FIT &amp; EARN extra income</p>",
+        "ggQ9FCCbNi8_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:14px;\">At Sporton, you can reach your fitness goals, earn extra income, and inspire those around you.</span></p>"
+      }
+    },
+    "hero_mCUBQj": {
       "type": "hero",
       "blocks": {
-        "text_RbmpyP": {
+        "text_NGeCeD": {
           "type": "text",
           "settings": {
-            "text": "<h1>New arrivals</h1>",
+            "text": "<h2>JOIN THE NEXT ONE </h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -37,10 +47,10 @@
           },
           "blocks": {}
         },
-        "text_mhA4DJ": {
+        "text_jUrCLJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
+            "text": "<p>Become part of our fitness community </p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -61,11 +71,27 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "button_F6AbbG": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "JOIN HERE",
+            "link": "https://sporton.store/pages/next-up#shopify-section-template--27580442313090__main_sporton_next_signup_xJFyJz",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_RbmpyP",
-        "text_mhA4DJ"
+        "text_NGeCeD",
+        "text_jUrCLJ",
+        "button_F6AbbG"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -85,11 +111,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 21,
-        "section_width": "full-width",
+        "gap": 16,
+        "section_width": "page-width",
         "section_height": "large",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-6",
         "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",
@@ -97,816 +123,288 @@
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 0,
-        "padding-block-end": 40
+        "padding-block-end": 0
       }
     },
-    "gp_section_602235078512214724": {
-      "type": "gp-section-602235078512214724",
-      "settings": {
-        "section_preload": "true",
-        "checksum": "70cdcff4498126cdc350283df956d6d1b755c8633bc3449094cd6bea12b81200_1_1_1_0__1",
-        "ggh_FFdn_rr_text": "<p>STAY FIT &amp; EARN extra income</p>",
-        "ggQ9FCCbNi8_text": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:14px;\">At Sporton, you can reach your fitness goals, earn extra income, and inspire those around you.</span></p>"
-      }
-    },
-    "section_iniFA7": {
+    "section_HMhN6z": {
       "type": "section",
       "blocks": {
-        "image_mV6EmF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC06583.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_W4kWn9": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_GDgPCe": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>PREVENTS INJURY BEFORE IT HAPPENS</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_4wRpz7": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Reformer improves alignment, balance, and control, correcting the small imbalances that lead to strain, tweaks, and setbacks down the line. Prehab, not just rehab.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_GDgPCe",
-            "text_4wRpz7"
-          ]
-        }
-      },
-      "block_order": [
-        "image_mV6EmF",
-        "group_W4kWn9"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_XhjWg3": {
-      "type": "section",
-      "blocks": {
-        "group_BW3MBb": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_98GTpx": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>IMPROVES MOBILITY</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_dhC48W": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Tight hips, stiff back, sore shoulders, Reformer builds flexibility and mobility while still building strength. Perfect if you lift, run, golf, or sit at a desk all day.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_98GTpx",
-            "text_dhC48W"
-          ]
-        },
-        "image_crVyzJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC06583.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "group_BW3MBb",
-        "image_crVyzJ"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_cF4QqH": {
-      "type": "section",
-      "blocks": {
-        "image_398Atb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC06583.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_BCMR3P": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_cQWC8L": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>STRENGTH ISN'T JUST BUILT STANDING UP</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_Jt8dN4": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Reformer works deep stabilizing muscles most gym routines skip, the ones that support heavier lifts, protect your lower back, and make every other workout more efficient.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_cQWC8L",
-            "text_Jt8dN4"
-          ]
-        }
-      },
-      "block_order": [
-        "image_398Atb",
-        "group_BCMR3P"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_LWfc4n": {
-      "type": "section",
-      "blocks": {
-        "group_FExa3F": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_giL9Gr": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>RECOVERY DAY, WITHOUT WASTING THE DAY</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_iHzQHG": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Low-impact, high-control. Reformer improves mobility and circulation so you show up stronger to whatever's next, the gym, the court, the pitch.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_giL9Gr",
-            "text_iHzQHG"
-          ]
-        },
-        "image_6ErDXY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC06583.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "group_FExa3F",
-        "image_6ErDXY"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_aVhrRW": {
-      "type": "section",
-      "blocks": {
-        "image_YJBDzL": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC06583.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_RHNagB": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_9c8ki4": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h1>JOIN NEXT ONE</h1>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_cLtcCi": {
-              "type": "text",
-              "settings": {
-                "text": "<ul><li><h5>Exclusive fitness and community events</h5></li><li><h5>Early access to launches and limited drops</h5></li><li><h5>Member-only discounts and surprise rewards</h5></li><li><h5>Training content, challenges, and more</h5></li></ul>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-subheading--family)",
-                "font_size": "1.25rem",
-                "line_height": "loose",
-                "letter_spacing": "normal",
-                "case": "uppercase",
-                "wrap": "balance",
-                "color": "var(--color-foreground-heading)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 20,
-                "padding-block-end": 19,
-                "padding-inline-start": 19,
-                "padding-inline-end": 30
-              },
-              "blocks": {}
-            },
-            "button_dcatXw": {
-              "type": "button",
-              "settings": {
-                "label": "JOIN NOW",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "custom",
-                "custom_width": 100,
-                "width_mobile": "custom",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_9c8ki4",
-            "text_cLtcCi",
-            "button_dcatXw"
-          ]
-        }
-      },
-      "block_order": [
-        "image_YJBDzL",
-        "group_RHNagB"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_7QhPjC": {
-      "type": "section",
-      "blocks": {
-        "text_fbyMff": {
+        "text_KfbtaV": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Subscribe to our emails</h2>",
+            "text": "<h2> PILATES FOR THE MEN, NOT THE BOYS.</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_qwgMcF": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Pilates is not just stretching, and it is not easy. Reformer Pilates is a demanding, intelligent form of training that builds strength, control, balance, and mobility from the inside out.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_KfbtaV",
+        "text_qwgMcF"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_Eqha8e": {
+      "type": "section",
+      "blocks": {
+        "image_zdjJ7D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC06583.jpg",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_BPMrNR": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_9dzz8J": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Join us for an educational reformer session designed to show men how Pilates can support performance, recovery, and everyday movement.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_97z6BB": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>WHY PILATES?</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_qFzXda": {
+              "type": "text",
+              "settings": {
+                "text": "<ul><li><strong>Balance: </strong> Improve stability, coordination, and body control.</li></ul><p></p><ul><li><strong>Mobility: </strong> Increase range of motion while continuing to build strength.</li></ul><p></p><ul><li><strong>Recovery: </strong>Support active recovery and help your body move more efficiently.</li></ul><p></p><ul><li><strong>Injury prevention: </strong> Improve alignment, control, and movement quality to help reduce unnecessary strain.</li></ul><p></p><ul><li><strong>Core strength: </strong> Build deep strength that supports lifting, running, sport, and everyday movement.</li></ul><p></p><ul><li><strong>Better posture: </strong> Strengthen the muscles that help you stand, sit, and move with better alignment.</li></ul><p></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_9dzz8J",
+            "text_97z6BB",
+            "text_qFzXda"
+          ]
+        }
+      },
+      "block_order": [
+        "image_zdjJ7D",
+        "group_BPMrNR"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_m6xcAz": {
+      "type": "section",
+      "blocks": {
+        "text_B6EAg8": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>THE NEXT EVENT</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -928,10 +426,10 @@
           },
           "blocks": {}
         },
-        "text_JnwU6B": {
+        "text_Pf6C6f": {
           "type": "text",
           "settings": {
-            "text": "<p>Be the first to know about new collections and special offers. </p>",
+            "text": "<p><strong>October 3rd, Limited to 25 spots</strong></p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -953,7 +451,7 @@
           },
           "blocks": {}
         },
-        "email_signup_pcL4aL": {
+        "email_signup_piAPMG": {
           "type": "email-signup",
           "settings": {
             "width": "custom",
@@ -980,9 +478,9 @@
         }
       },
       "block_order": [
-        "text_fbyMff",
-        "text_JnwU6B",
-        "email_signup_pcL4aL"
+        "text_B6EAg8",
+        "text_Pf6C6f",
+        "email_signup_piAPMG"
       ],
       "name": "t:names.email_signup",
       "settings": {
@@ -1013,6 +511,18 @@
         "padding-block-end": 40
       }
     },
+    "main_sporton_next_signup_xJFyJz": {
+      "type": "main-sporton-next-signup",
+      "name": "Sporton Next sign-up",
+      "settings": {
+        "heading": "Your next starts here.",
+        "intro": "Join a moving community with first access to events, launches, rewards, and the people who keep Sporton moving.",
+        "form_heading": "Join Sporton Next",
+        "form_intro": "Create your account and we’ll keep you close to what’s next.",
+        "button_label": "Create my account",
+        "color_scheme": ""
+      }
+    },
     "gp_section_602235600384295620": {
       "type": "gp-section-602235600384295620",
       "disabled": true,
@@ -1035,22 +545,35 @@
         "section_preload": "false",
         "checksum": "",
         "gg48Z5psBRB_text": "FAQs",
-        "gg1SJCz10Ou_childItem_0": "<p>What makes Sporton activewear different from other brands?</p>",
-        "gg1SJCz10Ou_childItem_1": "<p>How can I find the right size for me?</p>",
-        "ggnMu1C_QXS_text": "<p>At Sporton, we spent over two years researching, testing, and perfecting our fabrics to deliver unmatched comfort, performance, and durability. Our products are designed to support you at every stage of your fitness journey—no matter your goal, body type, or activity level.</p>",
-        "ggcFCEbWrDt_text": "<p>Every Sporton product page includes a detailed size chart and helpful fit notes. We also show the height and size of our models, so you can get a clearer visual idea of how each item fits on different body types. If you’re between sizes, we suggest sizing up for a roomier fit, or you can always reach out to our customer support for personalized sizing advice.</p>",
-        "gg8u6UFRdg8_childItem_0": "<p>Where do you ship, and how long does delivery take?</p>",
-        "gg8u6UFRdg8_childItem_1": "<p>What is your return and exchange policy?</p>",
+        "gg1SJCz10Ou_childItem_0": "What makes Sporton activewear different from other brands?",
+        "gg1SJCz10Ou_childItem_1": "How can I find the right size for me?",
+        "ggnMu1C_QXS_text": "At Sporton, we spent over two years researching, testing, and perfecting our fabrics to deliver unmatched comfort, performance, and durability. Our products are designed to support you at every stage of your fitness journey—no matter your goal, body type, or activity level.",
+        "ggcFCEbWrDt_text": "Every Sporton product page includes a detailed size chart and helpful fit notes. We also show the height and size of our models, so you can get a clearer visual idea of how each item fits on different body types. If you’re between sizes, we suggest sizing up for a roomier fit, or you can always reach out to our customer support for personalized sizing advice.",
+        "gg8u6UFRdg8_childItem_0": "Where do you ship, and how long does delivery take?",
+        "gg8u6UFRdg8_childItem_1": "What is your return and exchange policy?",
         "ggykZp3qqwF_text": "<p>We currently ship nationwide and across Europe, with plans to expand even further!</p><ul>\n<li>\n<strong>Germany:</strong> Orders are delivered next day, and for customers in Berlin/Sporton's close friends, same day delivery may be available. (orders before 1pm)</li>\n<li>\n<strong>Other European Countries:</strong> Delivery typically takes 2–3 business days.</li>\n<li>\n<strong>International Orders:</strong> Shipping takes around 7 business days, depending on location.<br>Standard and express options are available at checkout, and you’ll receive a tracking link as soon as your order ships.</li>\n</ul>",
-        "ggzHGApmpcf_text": "<p>We accept returns and exchanges within 30 days of delivery as long as items are unworn and with original tags attached. To initiate a return or exchange, simply visit our [Returns Portal] or contact us at <a href=\"mailto:support@sporton.com\" target=\"_blank\">support@sporton.</a>store</p>",
-        "gguWVpth1AF_childItem_0": "<p>Is Sporton quality really that special?</p>",
-        "gguWVpth1AF_childItem_1": "<p>Are your fabrics and materials sustainable?</p>",
-        "ggSCho9ygMj_text": "<p>Absolutely! We spent over two years sourcing and pressure-testing dozens of fabric blends and trims. We’re so confident in our quality that we offer a satisfaction guarantee: if you’re not impressed, let us know and we’ll make it right.</p>",
-        "gg9aiWnsHl8_text": "<p>Sustainability is a priority at Sporton. Our collection features eco-friendly fabrics selected for performance and minimal impact, and we continuously seek ways to increase our use of recycled and responsible materials.</p>",
-        "ggEfdcB0Zi-_childItem_0": "<p>How can I join the affiliate program and sporton community?</p>",
-        "ggEfdcB0Zi-_childItem_1": "<p>When is the next fitness event?</p>",
-        "gg5QNAHFh7P_text": "<p>Joining our affiliate program is easy—and we’d love to have you! Simply visit our [Affiliate Program page] and fill out the quick application form. Once accepted, you’ll get your unique referral link, early access to launches, and special perks for sharing Sporton with your audience.</p>",
-        "ggEnbKPONwB_text": "<p>Stay in the loop by signing up for our newsletter! You’ll be the first to get invited to our upcoming fitness events, as well as enjoy first looks at new collections and exclusive sneak peeks, just for members of our community. Don’t miss out—subscribe today!</p>"
+        "ggzHGApmpcf_text": "We accept returns and exchanges within 30 days of delivery as long as items are unworn and with original tags attached. To initiate a return or exchange, simply visit our [Returns Portal] or contact us at <a href=\"mailto:support@sporton.com\" target=\"_blank\">support@sporton.</a>store",
+        "gguWVpth1AF_childItem_0": "Is Sporton quality really that special?",
+        "gguWVpth1AF_childItem_1": "Are your fabrics and materials sustainable?",
+        "ggSCho9ygMj_text": "Absolutely! We spent over two years sourcing and pressure-testing dozens of fabric blends and trims. We’re so confident in our quality that we offer a satisfaction guarantee: if you’re not impressed, let us know and we’ll make it right.",
+        "gg9aiWnsHl8_text": "Sustainability is a priority at Sporton. Our collection features eco-friendly fabrics selected for performance and minimal impact, and we continuously seek ways to increase our use of recycled and responsible materials.",
+        "ggEfdcB0Zi-_childItem_0": "How can I join the affiliate program and sporton community?",
+        "ggEfdcB0Zi-_childItem_1": "When is the next fitness event?",
+        "gg5QNAHFh7P_text": "Joining our affiliate program is easy—and we’d love to have you! Simply visit our [Affiliate Program page] and fill out the quick application form. Once accepted, you’ll get your unique referral link, early access to launches, and special perks for sharing Sporton with your audience.",
+        "ggEnbKPONwB_text": "Stay in the loop by signing up for our newsletter! You’ll be the first to get invited to our upcoming fitness events, as well as enjoy first looks at new collections and exclusive sneak peeks, just for members of our community. Don’t miss out—subscribe today!"
+      }
+    },
+    "gp_global_section_602852401593975489-2": {
+      "type": "gp-global-section-602852401593975489",
+      "disabled": true,
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggRljDi0_h0_text": "Sign up to 40% plus",
+        "ggtLVOEgKbx_text": "your fitness journey starts here. sign up to  exclusive access to your fitness events,  latest collection, and save up to 40% off ",
+        "ggJ3t8TOOQb_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "ggJ3t8TOOQb_errorMessage": "Can’t send email. Please try again later.",
+        "ggUbT2iVqRm_placeholder": "Enter your email"
       }
     },
     "gp_global_section_602851221115503244-3": {
@@ -1060,33 +583,44 @@
         "checksum": "",
         "ggOfNoCt_Oo_text": "<br>About sporton",
         "ggqDNlegQVG_text": "<p>Sporton was founded strictly to bring positive value to the world, regardless of what that might look or feel like for each individual, whether it is physically, mentally, or emotionally. </p>",
+        "ggYHeBLDPNE_srcSet_desktop_src_1715284895": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/social.png",
+        "ggYHeBLDPNE_alt_1978768214": "Alt Image",
+        "ggYHeBLDPNE_title_-2124750075": "Image Title",
+        "ggDWpsklcVt_srcSet_desktop_src_-1438838089": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/tiktok.png",
+        "ggDWpsklcVt_alt_1978768214": "Alt Image",
+        "ggDWpsklcVt_title_-2124750075": "Image Title",
+        "ggqI4JUJ3Xn_srcSet_desktop_src_59719352": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/twitter_bb0b51e5-06fd-4795-90c4-8466ffc2e063.png",
+        "ggqI4JUJ3Xn_alt_1978768214": "Alt Image",
+        "ggqI4JUJ3Xn_title_-2124750075": "Image Title",
         "gg79jzxBDBY_text": "Product",
         "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a> ",
         "gganOxaMGOq_text": "About  ",
-        "ggjaMurHQIW_text": "<p>Contact </p>",
-        "gg8MAPdxPe4_text": "<p>Affiliates</p>",
+        "ggjaMurHQIW_text_418933088": "<a href=\"https://sporton.store/pages/contact\"><u>Contact </u></a>",
+        "gg8MAPdxPe4_text_-929780244": "<a href=\"https://sporton.store/pages/Affiliates\"><u>Affiliates</u></a>",
         "ggOI62S6cgB_text": "Delivary &amp; Returns",
-        "gg2SJB2FT9j_text": "<p>Shipping</p>",
-        "ggEhEqvYlwF_text": "<p>Returns</p>",
+        "gg2SJB2FT9j_text_-806750158": "<a href=\"$locationOrigin/pages/shipping-policy\"><u>Shipping</u></a>",
+        "ggEhEqvYlwF_text_401031638": "<a href=\"$locationOriginpages/return-and-refund-policy\"><u>Returns</u></a>",
         "gg9piXg5rBN_text": "Legal  ",
-        "gguj75VIlAU_text": "<p>Terms + Conditions </p>",
-        "ggJDJsGjCrZ_text": "<p>Privacy Policy</p>",
+        "gguj75VIlAU_text_1517213946": "<a href=\"$locationOrigin/pages/terms-of-service\"><u>Terms + Conditions </u></a>",
+        "ggJDJsGjCrZ_text_1928505081": "<a href=\"$locationOrigin/pages/privacy-policy\"><u>Privacy Policy</u></a>",
         "ggqDeC2uR1k_text": "Gift someone you love ",
-        "gg6AR3WOPAx_text": "<p>Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved.</p>"
+        "gg6AR3WOPAx_text": "Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved.",
+        "gg-jtPmhZWu_srcSet_desktop_src_-1230520492": "https://cdn.shopify.com/s/files/1/0951/2815/8594/files/Payments_10.png",
+        "gg-jtPmhZWu_alt_1978768214": "Alt Image",
+        "gg-jtPmhZWu_title_-2124750075": "Image Title"
       }
     }
   },
   "order": [
-    "hero_N493VV",
     "gp_section_602235078512214724",
-    "section_iniFA7",
-    "section_XhjWg3",
-    "section_cF4QqH",
-    "section_LWfc4n",
-    "section_aVhrRW",
-    "section_7QhPjC",
+    "hero_mCUBQj",
+    "section_HMhN6z",
+    "section_Eqha8e",
+    "section_m6xcAz",
+    "main_sporton_next_signup_xJFyJz",
     "gp_section_602235600384295620",
     "gp_global_section_602852479155045298-1",
+    "gp_global_section_602852401593975489-2",
     "gp_global_section_602851221115503244-3"
   ]
 }

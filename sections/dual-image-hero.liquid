@@ -1,0 +1,246 @@
+{% comment %}
+  Sporton — Dual image hero banner
+  Two images side by side on desktop, stacked on mobile.
+  Text content (heading, subheading, button) overlays one chosen image.
+{% endcomment %}
+
+<div class="dual-hero color-{{ section.settings.color_scheme }}">
+  <div class="dual-hero__grid">
+
+    {% for block in section.blocks %}
+      {% if block.type == 'image' %}
+        {% liquid
+          assign img = block.settings.image
+          assign img_link = block.settings.link
+          assign show_content = block.settings.show_content
+        %}
+
+        {% if img_link != blank %}
+          <a href="{{ img_link }}" class="dual-hero__panel" {{ block.shopify_attributes }}>
+        {% else %}
+          <div class="dual-hero__panel" {{ block.shopify_attributes }}>
+        {% endif %}
+
+          <div class="dual-hero__media">
+            {% if img %}
+              {{
+                img
+                | image_url: width: 1600
+                | image_tag:
+                  loading: 'lazy',
+                  alt: img.alt | default: section.settings.heading,
+                  sizes: '(min-width: 750px) 50vw, 100vw',
+                  widths: '750, 1000, 1600'
+              }}
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'dual-hero__placeholder' }}
+            {% endif %}
+          </div>
+
+          {% if show_content %}
+            <div class="dual-hero__content dual-hero__content--{{ section.settings.content_position }}">
+              {% if section.settings.heading != blank %}
+                <h2 class="dual-hero__heading">{{ section.settings.heading }}</h2>
+              {% endif %}
+              {% if section.settings.subheading != blank %}
+                <p class="dual-hero__subheading">{{ section.settings.subheading }}</p>
+              {% endif %}
+              {% if section.settings.button_label != blank %}
+                <span class="dual-hero__button">{{ section.settings.button_label }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+        {% if img_link != blank %}
+          </a>
+        {% else %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
+
+{% stylesheet %}
+  .dual-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .dual-hero__panel {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+  }
+
+  .dual-hero__media,
+  .dual-hero__media img,
+  .dual-hero__placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .dual-hero__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+    color: #fff;
+    max-width: 420px;
+  }
+
+  .dual-hero__content--left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .dual-hero__content--center {
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .dual-hero__heading {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+
+  .dual-hero__subheading {
+    font-size: 1rem;
+    margin: 0 0 24px;
+    opacity: 0.9;
+  }
+
+  .dual-hero__button {
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Mobile: stack images vertically, same visual treatment */
+  @media screen and (max-width: 749px) {
+    .dual-hero__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .dual-hero__panel {
+      aspect-ratio: 4 / 5;
+    }
+
+    .dual-hero__content {
+      padding: 32px 24px;
+    }
+
+    .dual-hero__heading {
+      font-size: 2rem;
+    }
+
+    .dual-hero__subheading {
+      font-size: 0.95rem;
+    }
+
+    .dual-hero__button {
+      padding: 12px 24px;
+      font-size: 0.8rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Dual image banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Text overlay"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "SUN-SET"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "New season. Same motivation."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "left"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image panel",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_content",
+          "label": "Show heading, subheading & button on this image",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dual image banner",
+      "blocks": [
+        { "type": "image", "settings": { "show_content": true } },
+        { "type": "image", "settings": { "show_content": false } }
+      ]
+    }
+  ]
+}
+{% endschema %}

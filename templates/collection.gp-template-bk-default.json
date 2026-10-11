@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "order": [
+    "section",
+    "main",
+    "gp_shopify_original_section_600920334161412757",
+    "gp_shopify_original_global_section_602852479155045298-1",
+    "gp_shopify_original_global_section_612959316772651744-2",
+    "gp_shopify_original_global_section_602851221115503244-3"
+  ],
   "sections": {
     "gp_shopify_original_global_section_602851221115503244-3": {
       "type": "gp-global-section-602851221115503244",
@@ -19,14 +27,8 @@
         "gg79jzxBDBY_text": "Product",
         "ggGPiX_CIl__text_197251317": "<a href=\"$locationOrigin/collections/all-product\"><u>Shop all</u></a>&nbsp;",
         "gganOxaMGOq_text": "About &nbsp;",
-        "ggjaMurHQIW_text": "<a href=\"https://sporton.store/pages/contact\"><u>Contact&nbsp;</u></a>",
-        "gg8MAPdxPe4_text": "<a href=\"https://sporton.store/pages/Affiliates\"><u>Affiliates</u></a>",
         "ggOI62S6cgB_text": "Delivary &amp; Returns",
-        "gg2SJB2FT9j_text": "<a href=\"$locationOrigin/pages/shipping-policy\"><u>Shipping</u></a>",
-        "ggEhEqvYlwF_text": "<a href=\"$locationOriginpages/return-and-refund-policy\"><u>Returns</u></a>",
         "gg9piXg5rBN_text": "Legal &nbsp;",
-        "gguj75VIlAU_text": "<a href=\"$locationOrigin/pages/terms-of-service\"><u>Terms + Conditions&nbsp;</u></a>",
-        "ggJDJsGjCrZ_text": "<a href=\"$locationOrigin/pages/privacy-policy\"><u>Privacy Policy</u></a>",
         "ggqDeC2uR1k_text": "Gift someone you love&nbsp;",
         "gg6AR3WOPAx_text": "Copyright © 2026 <strong>Designed &amp; Built by Sanni, </strong>All Rights Reserved."
       }
@@ -139,6 +141,28 @@
               },
               "blocks": {}
             },
+            "price_EzJzMm": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "product_title_4nY4eT": {
               "type": "product-title",
               "name": "t:names.product_title",
@@ -158,28 +182,6 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_EzJzMm": {
-              "type": "price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -303,13 +305,5 @@
         "padding-block-end": 48
       }
     }
-  },
-  "order": [
-    "section",
-    "main",
-    "gp_shopify_original_section_600920334161412757",
-    "gp_shopify_original_global_section_602852479155045298-1",
-    "gp_shopify_original_global_section_612959316772651744-2",
-    "gp_shopify_original_global_section_602851221115503244-3"
-  ]
+  }
 }
