@@ -14,6 +14,26 @@
     "footer_m9NzUG": {
       "type": "footer",
       "blocks": {
+        "logo_CpYmKC": {
+          "type": "logo",
+          "name": "t:names.logo",
+          "settings": {
+            "inverse": false,
+            "font": "heading",
+            "unit": "pixel",
+            "percent_width": 100,
+            "pixel_height": 40,
+            "custom_mobile_size": false,
+            "unit_mobile": "percent",
+            "percent_width_mobile": 100,
+            "pixel_height_mobile": 120,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "group_H6VpwJ": {
           "type": "group",
           "settings": {
@@ -53,8 +73,51 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "social_links_4hTwhY": {
+              "type": "social-links",
+              "name": "t:names.social_media_links",
+              "disabled": true,
+              "settings": {
+                "facebook_url": "",
+                "instagram_url": "",
+                "youtube_url": "",
+                "tiktok_url": "",
+                "twitter_url": "",
+                "threads_url": "",
+                "linkedin_url": "",
+                "bluesky_url": "",
+                "snapchat_url": "",
+                "pinterest_url": "",
+                "tumblr_url": "",
+                "vimeo_url": "",
+                "custom_url": ""
+              },
+              "blocks": {}
+            },
+            "menu_ABAGCE": {
+              "type": "menu",
+              "name": "t:names.menu",
+              "settings": {
+                "menu": "account",
+                "heading": "",
+                "menu_spacing": 12,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_LWt8Pz": {
               "type": "text",
+              "disabled": true,
               "settings": {
                 "text": "<h2>Join our email list</h2>",
                 "width": "100%",
@@ -80,6 +143,7 @@
             },
             "text_f9CFLH": {
               "type": "text",
+              "disabled": true,
               "settings": {
                 "text": "<p>Get exclusive deals and early access to new products.</p>",
                 "width": "100%",
@@ -105,12 +169,15 @@
             }
           },
           "block_order": [
+            "social_links_4hTwhY",
+            "menu_ABAGCE",
             "text_LWt8Pz",
             "text_f9CFLH"
           ]
         },
         "email_signup_crihX7": {
           "type": "email-signup",
+          "disabled": true,
           "settings": {
             "width": "fill",
             "custom_width": 100,
@@ -136,6 +203,7 @@
         }
       },
       "block_order": [
+        "logo_CpYmKC",
         "group_H6VpwJ",
         "email_signup_crihX7"
       ],

@@ -32,7 +32,8 @@
       {{ product.price | money }}
     </div>
 
-    {% form 'product', product, id: form_id, class: 'complete-look-card__form', data-complete-look-form: '' %}
+    <product-form-component on:submit="/handleSubmit">
+  {% form 'product', product, id: form_id, class: 'complete-look-card__form', data-complete-look-form: '' %}
       <input
         type="hidden"
         name="id"
@@ -129,42 +130,91 @@
         {% endfor %}
       {% endif %}
 
-     <button
+      <button
         type="submit"
         class="complete-look-card__button"
         data-complete-look-submit
-        style="border-radius: 100px !important;"
+        style="border-radius: 16px !important; overflow: hidden !important;"
       >
-        Quick selection
+        ADD TO CART
       </button>
     {% endform %}
+</product-form-component>
 
     <script type="application/json" data-complete-look-variants>
       {{ product.variants | json }}
     </script>
   </div>
 </article>
+
 {% stylesheet %}
-  .complete-look-card__form {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+/* Complete the Look - final styling */
+.complete-look-card .complete-look-card__form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.complete-look-card .complete-look-card__form select {
+  width: 100% !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  padding: 6px 12px !important;
+  border-radius: 16px !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+}
+
+/* Product name without underline */
+.complete-look-card .complete-look-card__title,
+.complete-look-card .complete-look-card__title:hover,
+.complete-look-card .complete-look-card__title:focus,
+.complete-look-card .complete-look-card__title:active,
+.complete-look-card .complete-look-card__title:visited {
+  display: block !important;
+  margin: 0 !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+}
+
+/* Price */
+.complete-look-card .complete-look-card__price {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+}
+
+/* Quick Selection/Add button - rounded like the main Add to Cart button */
+.complete-look-card .complete-look-card__button,
+.complete-look-card button[type='submit'] {
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  padding: 0 14px !important;
+  border: 0 !important;
+  border-radius: 16px !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+  .complete-look-card .complete-look-card__button {
+    width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
   }
 
-  .complete-look-card__form select {
-    padding: 6px 12px;
-    height: 32px;
-    min-height: 0;
-    line-height: 1.2;
-    font-size: 0.85rem;
-    border-radius: 100px;
-  }
-
-  .complete-look-card__button {
-    padding: 8px 16px;
-    height: 34px;
-    min-height: 0;
-    font-size: 0.8rem;
-    line-height: 1;
-  }
 {% endstylesheet %}

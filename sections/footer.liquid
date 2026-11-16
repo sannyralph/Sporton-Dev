@@ -1,8 +1,8 @@
 
 
-<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="section-background color-{{ section.settings.color_scheme }} sporton-footer__background"></div>
 <div
-  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
+  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} sporton-footer"
 >
   {% liquid
     assign total_blocks = section.blocks.size
@@ -45,43 +45,176 @@
     {% content_for 'blocks' %}
   </div>
 </div>
-
 {% stylesheet %}
-  .footer-content {
+  .sporton-footer__background {
+    background: #ffffff !important;
+  }
+
+  .sporton-footer {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .sporton-footer .footer-content {
+    width: min(100%, 1440px);
+    margin-inline: auto;
+    padding-block: 56px 42px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+    gap: 48px 56px;
     contain: content;
     content-visibility: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--footer-gap);
   }
 
+  /* Remove dark block backgrounds inherited from the old color scheme */
+  .sporton-footer .footer-content > *,
+  .sporton-footer .footer-content > * > * {
+    background: transparent !important;
+    color: #111111 !important;
+    box-shadow: none !important;
+  }
+
+  /* Headings */
+  .sporton-footer :is(h1, h2, h3, h4, h5, h6, legend) {
+    margin: 0 0 22px !important;
+    color: #111111 !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+  }
+
+  /* Body copy */
+  .sporton-footer :is(p, li, a, label) {
+    color: #111111 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+    letter-spacing: 0 !important;
+  }
+
+  .sporton-footer p {
+    margin: 0 0 14px !important;
+  }
+
+  /* Menu links */
+  .sporton-footer ul,
+  .sporton-footer ol {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .sporton-footer a {
+    text-decoration: none !important;
+    transition: opacity 0.2s ease;
+  }
+
+  .sporton-footer a:hover {
+    opacity: 0.55;
+  }
+
+  /* Logo blocks */
+  .sporton-footer img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* Social icons */
+  .sporton-footer svg {
+    color: #111111 !important;
+  }
+
+  .sporton-footer :is(.social-links, .social-links__list) {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  /* Newsletter form */
+  .sporton-footer :is(input[type='email'], input[type='text']) {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 0 !important;
+    border: 0 !important;
+    border-bottom: 1px solid #111111 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #111111 !important;
+    font-size: 14px !important;
+  }
+
+  .sporton-footer :is(input[type='email'], input[type='text'])::placeholder {
+    color: #777777 !important;
+    opacity: 1;
+  }
+
+  .sporton-footer button {
+    min-height: 44px;
+    margin-top: 14px;
+    padding: 12px 26px !important;
+    border: 1px solid #111111 !important;
+    border-radius: 999px !important;
+    background: #111111 !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+  }
+
+  .sporton-footer button:hover {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  /* Payment icons */
+  .sporton-footer :is(.payment-icons, .payment-icons__list) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Tablet */
   @media screen and (min-width: 750px) and (max-width: 989px) {
-    .footer-content {
-      grid-template-columns: repeat(min(var(--grid-columns), 3), 1fr);
-      grid-auto-flow: row;
-    }
-
-    .footer-content[style*='--grid-columns: 4'] {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-content--isolated-grid-item-tablet > :last-child {
-      grid-column: 1 / -1;
+    .sporton-footer .footer-content {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 38px 32px;
     }
   }
 
-  @media screen and (min-width: 990px) {
-    .footer-content {
-      grid-template-columns: repeat(var(--grid-columns), 1fr);
+  /* Mobile */
+  @media screen and (max-width: 749px) {
+    .sporton-footer .footer-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding-block: 20px 24px;
     }
 
-    /* Single item centered */
-    .footer-content[style*='--grid-columns: 1'] {
-      justify-items: center;
+    .sporton-footer .footer-content > * {
+      width: 100%;
+      padding-block: 22px;
+      border-bottom: 1px solid #e5e5e5;
     }
 
-    .footer-content--isolated-grid-item-desktop > :last-child {
-      grid-column: 1 / -1;
+    .sporton-footer .footer-content > *:last-child {
+      border-bottom: 0;
+    }
+
+    .sporton-footer :is(h1, h2, h3, h4, h5, h6, legend) {
+      margin-bottom: 14px !important;
+      font-size: 10px !important;
+    }
+
+    .sporton-footer :is(p, li, a, label) {
+      font-size: 13px !important;
     }
   }
 {% endstylesheet %}

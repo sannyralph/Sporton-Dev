@@ -7,6 +7,12 @@
 
 {% assign block_settings = block.settings %}
 
+
+{% assign size_chart = product_resource.metafields.custom.size_chart.value %}
+{% assign size_chart_modal_id = 'SportonSizeChart-' | append: section.id | append: '-' | append: product_resource.id %}
+{% assign size_chart_default_unit = size_chart.default_unit.value | default: 'cm' %}
+{% assign size_chart_rows = size_chart.row.value %}
+
 {% unless product_resource.has_only_default_variant %}
   {% liquid
     assign button_background_brightness = section.settings.color_scheme.settings.foreground | color_brightness
@@ -61,12 +67,31 @@
             ref="fieldsets[]"
             {{ option_id_attribute }}
           >
-            <legend>
-              {{ product_option.name | escape -}}
-              {%- if variant_style == 'swatch' -%}
-                <span class="variant-option__swatch-value">{{ product_option.selected_value }}</span>
-              {%- endif %}
-            </legend>
+            {% assign option_name_lower = product_option.name | downcase %}
+
+          <legend class="sporton-size-option__legend">
+            <span>
+              {{ product_option.name | escape }}
+            </span>
+
+            {% if option_name_lower contains 'size' %}
+              <button
+                type="button"
+                class="sporton-size-chart-trigger"
+                data-size-chart-open="{{ size_chart_modal_id }}"
+                aria-haspopup="dialog"
+                aria-controls="{{ size_chart_modal_id }}"
+              >
+                Size chart
+              </button>
+            {% endif %}
+
+            {%- if variant_style == 'swatch' -%}
+              <span class="variant-option__swatch-value">
+                {{ product_option.selected_value }}
+              </span>
+            {%- endif -%}
+          </legend>
             {%- for product_option_value in product_option.values -%}
               {% if product_option_value.size > longest_value and option_id_attribute %}
                 {% assign longest_value = product_option_value.size %}
@@ -210,10 +235,426 @@
         {{ product_resource.selected_or_first_available_variant | json }}
       </script>
     </form>
+    <dialog
+  id="{{ size_chart_modal_id }}"
+  class="sporton-size-chart"
+  data-unit="{{ size_chart_default_unit | downcase }}"
+  aria-labelledby="{{ size_chart_modal_id }}-title"
+>
+  <div class="sporton-size-chart__panel">
+    <header class="sporton-size-chart__header">
+      <h2 id="{{ size_chart_modal_id }}-title">
+        {{ size_chart.title.value | upcase | default: 'SIZE CHART' }}
+      </h2>
+
+      <button
+        type="button"
+        class="sporton-size-chart__close"
+        data-size-chart-close
+        aria-label="Close size chart"
+      >
+        &times;
+      </button>
+    </header>
+
+    <div class="sporton-size-chart__content">
+      <div class="sporton-size-chart__toolbar">
+        <h3>SIZE CHART</h3>
+
+        <div class="sporton-size-chart__units">
+          <span>cm</span>
+
+          <button
+            type="button"
+            class="sporton-size-chart__toggle"
+            data-size-chart-toggle
+            aria-label="Switch measurement unit"
+            aria-pressed="false"
+          >
+            <span class="sporton-size-chart__toggle-knob"></span>
+          </button>
+
+          <span>in</span>
+        </div>
+      </div>
+
+      <div class="sporton-size-chart__table-wrap">
+        <table class="sporton-size-chart__table">
+          <thead>
+            <tr>
+              <th scope="col">Size</th>
+
+              {% if size_chart.column_1.value != blank %}
+                <th scope="col">{{ size_chart.column_1.value }}</th>
+              {% endif %}
+
+              {% if size_chart.column_2.value != blank %}
+                <th scope="col">{{ size_chart.column_2.value }}</th>
+              {% endif %}
+
+              {% if size_chart.column_3.value != blank %}
+                <th scope="col">{{ size_chart.column_3.value }}</th>
+              {% endif %}
+
+              {% if size_chart.column_4.value != blank %}
+                <th scope="col">{{ size_chart.column_4.value }}</th>
+              {% endif %}
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for row in size_chart_rows %}
+              <tr>
+                <th scope="row">{{ row.size.value }}</th>
+
+                {% if size_chart.column_1.value != blank %}
+                  <td
+                    data-cm="{{ row.measurement_1_cm.value }}"
+                    data-in="{{ row.measurement_1_in.value }}"
+                  >
+                    {{ row.measurement_1_cm.value }}
+                  </td>
+                {% endif %}
+
+                {% if size_chart.column_2.value != blank %}
+                  <td
+                    data-cm="{{ row.measurement_2_cm.value }}"
+                    data-in="{{ row.measurement_2_in.value }}"
+                  >
+                    {{ row.measurement_2_cm.value }}
+                  </td>
+                {% endif %}
+
+                {% if size_chart.column_3.value != blank %}
+                  <td
+                    data-cm="{{ row.measurement_3_cm.value }}"
+                    data-in="{{ row.measurement_3_in.value }}"
+                  >
+                    {{ row.measurement_3_cm.value }}
+                  </td>
+                {% endif %}
+
+                {% if size_chart.column_4.value != blank %}
+                  <td
+                    data-cm="{{ row.measurement_4_cm.value }}"
+                    data-in="{{ row.measurement_4_in.value }}"
+                  >
+                    {{ row.measurement_4_cm.value }}
+                  </td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script>
+  (() => {
+    const modal = document.getElementById('{{ size_chart_modal_id }}');
+
+    if (!modal) return;
+
+    const openButtons = document.querySelectorAll(
+      '[data-size-chart-open="{{ size_chart_modal_id }}"]'
+    );
+
+    const closeButton = modal.querySelector('[data-size-chart-close]');
+    const unitToggle = modal.querySelector('[data-size-chart-toggle]');
+    const measurementCells = modal.querySelectorAll('[data-cm][data-in]');
+
+    const setUnit = (unit) => {
+      const selectedUnit = unit === 'in' ? 'in' : 'cm';
+
+      modal.dataset.unit = selectedUnit;
+
+      unitToggle.setAttribute(
+        'aria-pressed',
+        selectedUnit === 'in' ? 'true' : 'false'
+      );
+
+      measurementCells.forEach((cell) => {
+        cell.textContent = cell.dataset[selectedUnit];
+      });
+    };
+
+    openButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        setUnit(modal.dataset.unit || 'cm');
+
+        if (typeof modal.showModal === 'function') {
+          modal.showModal();
+        }
+      });
+    });
+
+    closeButton?.addEventListener('click', () => {
+      modal.close();
+    });
+
+    unitToggle?.addEventListener('click', () => {
+      setUnit(modal.dataset.unit === 'cm' ? 'in' : 'cm');
+    });
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.close();
+      }
+    });
+  })();
+</script>
   </variant-picker>
 {% endunless %}
 
 {% stylesheet %}
+/* Sporton size-chart drawer */
+
+.sporton-size-chart {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sporton-size-chart[open] {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 1;
+}
+
+.sporton-size-chart::backdrop {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.sporton-size-chart__panel {
+  display: flex;
+  flex-direction: column;
+  width: min(50vw, 980px);
+  min-width: 620px;
+  height: 100%;
+  background: #fff;
+  color: #171717;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.sporton-size-chart[open] .sporton-size-chart__panel {
+  transform: translateX(0);
+}
+
+.sporton-size-chart__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  padding: 36px 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.sporton-size-chart__header h2 {
+  margin: 0;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.sporton-size-chart__close {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #171717;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+
+.sporton-size-chart__close:hover {
+  opacity: 0.45;
+}
+
+.sporton-size-chart__content {
+  flex: 1 1 auto;
+  padding: 42px 40px 56px;
+  overflow-y: auto;
+}
+
+.sporton-size-chart__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.sporton-size-chart__toolbar h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sporton-size-chart__units {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.sporton-size-chart__toggle {
+  position: relative;
+  width: 72px;
+  height: 34px;
+  padding: 3px;
+  border: 1.5px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.sporton-size-chart__toggle-knob {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #000;
+  transform: translateX(0);
+  transition: transform 0.35s ease;
+}
+
+.sporton-size-chart[data-unit='in']
+  .sporton-size-chart__toggle-knob {
+  transform: translateX(38px);
+}
+
+.sporton-size-chart__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #f6f6f6;
+}
+
+.sporton-size-chart__table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.sporton-size-chart__table th,
+.sporton-size-chart__table td {
+  padding: 28px 28px;
+  border-bottom: 1px solid #d7d7d7;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.sporton-size-chart__table thead th {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #171717;
+  font-weight: 700;
+}
+
+.sporton-size-chart__table tbody th {
+  color: #626262;
+  font-weight: 700;
+}
+
+.sporton-size-chart__table tbody td {
+  color: #626262;
+}
+
+.sporton-size-chart__table tbody tr:last-child th,
+.sporton-size-chart__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sporton-size-chart__panel {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sporton-size-chart__header {
+    padding: 24px 20px;
+  }
+
+  .sporton-size-chart__header h2 {
+    font-size: 1.2rem;
+  }
+
+  .sporton-size-chart__content {
+    padding: 28px 20px 40px;
+  }
+
+  .sporton-size-chart__table th,
+  .sporton-size-chart__table td {
+    padding: 20px 18px;
+    font-size: 0.9rem;
+  }
+}
+/* Sporton size-chart trigger */
+
+.variant-option--buttons .sporton-size-option__legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: var(--margin-xs);
+}
+
+.sporton-size-chart-trigger {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9em;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 0.45s ease;
+}
+
+/* AYBL-style soft fade on hover */
+.sporton-size-chart-trigger:hover {
+  opacity: 0.4;
+}
+
+.sporton-size-chart-trigger:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 749px) {
+  .variant-option--buttons .sporton-size-option__legend {
+    margin-bottom: 8px;
+  }
+
+  .sporton-size-chart-trigger {
+    font-size: 0.85em;
+  }
+}
   .variant-picker {
     width: 100%;
   }

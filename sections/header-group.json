@@ -44,7 +44,7 @@
           "type": "_announcement",
           "settings": {
             "text": "Gift someone who desires is to be better everyday",
-            "link": "shopify://products/sporton-digital-gift-card",
+            "link": "shopify://products/digital-giftcard",
             "font": "var(--font-body--family)",
             "font_size": "0.75rem",
             "weight": "",

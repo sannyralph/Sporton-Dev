@@ -323,7 +323,7 @@
         "image_eUh7fR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC00523.jpg",
+            "image": "shopify://shop_images/all-in-one-jumpsuit-pink-sporton-active-sculpting-fit-3.jpg",
             "link": "",
             "show_content": true
           }
@@ -331,7 +331,7 @@
         "image_JdpAEx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC00038_2ed99714-a72c-4d90-a6fa-af87fd6e073b.jpg",
+            "image": "shopify://shop_images/men-performance-tank-top-black-sporton-2.jpg",
             "link": "",
             "show_content": false
           }
@@ -399,7 +399,7 @@
           "type": "category_card",
           "settings": {
             "gender": "womens",
-            "image": "shopify://shop_images/DSC00204.jpg",
+            "image": "shopify://shop_images/caicos-seamless-sports-bra-with-white-logo-5.jpg",
             "label": "TOPS & SPORT BRAS",
             "link": "shopify://collections/women-caicos"
           }
@@ -408,7 +408,7 @@
           "type": "category_card",
           "settings": {
             "gender": "womens",
-            "image": "shopify://shop_images/DSC00307.jpg",
+            "image": "shopify://shop_images/performance-sport-shorts-caicos-seamless-shorts-by-sporton-2.jpg",
             "label": "SHORTS",
             "link": ""
           }
@@ -417,7 +417,7 @@
           "type": "category_card",
           "settings": {
             "gender": "womens",
-            "image": "shopify://shop_images/DSC00523.jpg",
+            "image": "shopify://shop_images/all-in-one-jumpsuit-by-sporton-3.jpg",
             "label": "ALL IN ONE",
             "link": ""
           }
@@ -435,7 +435,7 @@
           "type": "category_card",
           "settings": {
             "gender": "mens",
-            "image": "shopify://shop_images/DSC00038_2ed99714-a72c-4d90-a6fa-af87fd6e073b.jpg",
+            "image": "shopify://shop_images/men-performance-tank-top-gray-sporton-active-5.jpg",
             "label": "T-SHIRTS & TANKS",
             "link": "shopify://collections/men-in-caicos"
           }
@@ -444,7 +444,7 @@
           "type": "category_card",
           "settings": {
             "gender": "mens",
-            "image": "shopify://shop_images/DSC00645.jpg",
+            "image": "shopify://shop_images/men-performance-shorts-caicos-by-sporton-active-2.jpg",
             "label": "SHORTS",
             "link": "shopify://collections/men-in-caicos"
           }
@@ -453,7 +453,7 @@
           "type": "category_card",
           "settings": {
             "gender": "mens",
-            "image": "shopify://shop_images/DSC00047_0eee5b27-1219-4ab8-8861-09c40055d828.jpg",
+            "image": "shopify://shop_images/men-performance-tank-top-black-sporton-2.jpg",
             "label": "ALL IN ONE",
             "link": "shopify://collections/men-in-caicos"
           }
@@ -462,7 +462,7 @@
           "type": "category_card",
           "settings": {
             "gender": "mens",
-            "image": "shopify://shop_images/DSC00047_0eee5b27-1219-4ab8-8861-09c40055d828.jpg",
+            "image": "shopify://shop_images/men-performance-shorts-in-black-sporton-caicos-2.jpg",
             "label": "HOODIE",
             "link": "shopify://collections/men-in-caicos"
           }
